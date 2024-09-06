@@ -10,8 +10,8 @@ const Layout: FC<{ children: React.ReactNode }> = ({ children }) => {
       <body className="min-h-screen bg-gray-100">
         <header className="fixed top-0 left-0 w-full bg-white text-black p-4 flex items-center justify-between z-50 shadow-md">
           <div className="flex items-center space-x-4">
-            <Image src="/images/loggo.png" alt="Abing's Darag Chicken Logo" width={48} height={48} className="h-12" /> {/* Logo */}
-            <div className="text-lg font-bold hidden md:block">Abing's Darag Chicken</div> {/* Hide on small screens */}
+          <Image src="/images/loggo.png" alt="Abing's Darag Chicken Logo" width={48} height={48} /> {/* Logo */}
+            <div className="text-lg font-bold hidden md:block">Abing&apos;s Darag Chicken</div> {/* Hide on small screens */}
           </div>
           <nav>
             <ul className="flex space-x-4">
