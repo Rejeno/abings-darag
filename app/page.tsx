@@ -1,20 +1,22 @@
+import Image from 'next/image';
 import { FC } from 'react';
 
 const HomePage: FC = () => {
   return (
     <>
       <section
-        className="relative flex-grow py-52 -mt-2 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url("/images/store.jpg")',
-          backgroundPosition: 'top'
+        className="relative flex-grow py-52 -mt-2"
+        style={{
+          backgroundImage: 'url("/images/store.jpg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'top',
+          backgroundRepeat: 'no-repeat'
         }}
       >
-        {/* Overlay with opacity */}
-        <div className="absolute inset-0 bg-black opacity-70"></div> {/* Adjust opacity as needed */}
-        
+        <div className="absolute inset-0 bg-black opacity-70"></div>
         <div className="container mx-auto text-center text-white relative z-10">
           <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-4">Discover the Pride of West Visayas</h2>
-          <p className="mt-4 text-lg">Abing's Darag Chicken - Bringing the best of local flavors</p>
+          <p className="mt-4 text-lg">Abing&apos;s Darag Chicken - Bringing the best of local flavors</p>
           <a
             href="#what-is-darag"
             className="mt-8 inline-block bg-red-700 text-white font-semibold py-3 px-6 rounded-md shadow-lg hover:bg-red-600 transition-transform transform hover:scale-105"
@@ -26,8 +28,8 @@ const HomePage: FC = () => {
 
       <section id="what-is-darag" className="p-8 text-black">
         <h2 className="text-3xl font-semibold mb-4">What is Darag Chicken?</h2>
-        <p className="mb-4">Darag chicken is a unique breed native to the Philippines, known for its superior flavor and quality...</p>
-        <img src="/images/darag.jpg" alt="Darag Chicken" className="mt-4 rounded-lg shadow-lg w-full max-w-2xl mx-auto"/>
+        <p>Darag chicken is a unique breed native to the Philippines, known for its superior flavor and quality...</p>
+        <Image src="/images/darag.jpg" alt="Darag Chicken" width={600} height={400} className="mt-4 rounded-lg shadow-lg"/>
       </section>
 
       <section id="why-darag" className="bg-gray-100 p-8 text-black">
@@ -65,8 +67,8 @@ const HomePage: FC = () => {
 
       <section id="success-story" className="p-8 text-black">
         <h2 className="text-3xl font-semibold mb-4">Our Success Story</h2>
-        <p className="mb-4">From a humble karinderia to a leading Darag chicken breeding business, our journey has been remarkable...</p>
-        <img src="/images/success.jpg" alt="Success Story" className="mt-4 rounded-lg shadow-lg w-full max-w-2xl mx-auto"/>
+        <p>From a humble karinderia to a leading Darag chicken breeding business, our journey has been remarkable...</p>
+        <Image src="/images/success.jpg" alt="Success Story" width={600} height={400} className="mt-4 rounded-lg shadow-lg"/>
       </section>
 
       <section id="contact" className="bg-gray-100 p-8 text-black">
@@ -77,4 +79,4 @@ const HomePage: FC = () => {
   );
 };
 
-export default HomePage;
+export default HomePage
