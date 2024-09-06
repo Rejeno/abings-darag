@@ -24,7 +24,7 @@ const Layout: FC<{ children: React.ReactNode }> = ({ children }) => {
         </header>
         <main className="pt-16">{children}</main> {/* Added padding to avoid content being hidden behind the fixed header */}
         <footer className="bg-red-600 text-white p-4 text-center">
-          © 2024 Abing's Darag Chicken
+          © 2024 Abing&apos;s Darag Chicken
         </footer>
       </body>
     </html>
