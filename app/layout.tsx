@@ -18,6 +18,7 @@ const Layout: FC<{ children: React.ReactNode }> = ({ children }) => {
               <li><a href="#what-is-darag" className="hover:bg-red-600 hover:text-white px-3 py-2 rounded-lg transition-colors">About</a></li>
               <li><a href="#why-darag" className="hover:bg-red-600 hover:text-white px-3 py-2 rounded-lg transition-colors">Benefits</a></li>
               <li><a href="#success-story" className="hover:bg-red-600 hover:text-white px-3 py-2 rounded-lg transition-colors">Story</a></li>
+              <li><a href="#suppliers" className="hover:bg-red-600 hover:text-white px-3 py-2 rounded-lg transition-colors">Suppliers</a></li>
               <li><a href="#contact" className="hover:bg-red-600 hover:text-white px-3 py-2 rounded-lg transition-colors">Contact</a></li>
             </ul>
           </nav>
