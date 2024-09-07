@@ -14,7 +14,7 @@ const HomePage: FC = () => {
         style={{
           backgroundImage: 'url("/images/store.jpg")',
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundPosition: 'top',
           backgroundRepeat: 'no-repeat',
         }}
       >
