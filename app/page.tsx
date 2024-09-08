@@ -22,7 +22,7 @@ const HomePage: FC = () => {
       >
         <div className="absolute inset-0 bg-black opacity-80"></div>
         <div className="container mx-auto text-center text-white relative z-10 px-4">
-          <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold leading-tight mb-4 lg:-mt-10">
+          <h1 className="text-3xl md:text-6xl lg:text-8xl font-bold leading-tight mb-4 lg:-mt-10">
             Discover the Pride of West Visayas
           </h1>
           <p className="mt-7 text-md md:text-lg lg:text-3xl">
