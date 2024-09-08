@@ -12,7 +12,7 @@ const HomePage: FC = () => {
     <>
       {/* Hero Section */}
       <section
-        className="relative flex-grow py-16 md:py-32 lg:py-52"
+        className="relative flex-grow -mt-10 py-16 md:py-32 lg:py-52"
         style={{
           backgroundImage: 'url("/images/store.jpg")',
           backgroundSize: 'cover',
