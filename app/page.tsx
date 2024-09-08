@@ -25,7 +25,7 @@ const HomePage: FC = () => {
           <h1 className="text-3xl md:text-6xl lg:text-8xl font-bold leading-tight mb-4 lg:-mt-10">
             Discover the Pride of West Visayas
           </h1>
-          <p className="mt-7 text-md md:text-lg lg:text-3xl">
+          <p className="mt-7 text-sm md:text-lg lg:text-3xl">
             Abing&apos;s Darag Chicken - Bringing the best of local flavors
           </p>
           <a
