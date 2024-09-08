@@ -20,17 +20,17 @@ const HomePage: FC = () => {
           backgroundRepeat: 'no-repeat',
         }}
       >
-        <div className="absolute inset-0 bg-black opacity-70"></div>
+        <div className="absolute inset-0 bg-black opacity-80"></div>
         <div className="container mx-auto text-center text-white relative z-10 px-4">
-          <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold leading-tight mb-4">
+          <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold leading-tight mb-4 lg:-mt-10">
             Discover the Pride of West Visayas
           </h1>
-          <p className="mt-2 text-sm md:text-base lg:text-lg">
+          <p className="mt-7 text-md md:text-lg lg:text-3xl">
             Abing&apos;s Darag Chicken - Bringing the best of local flavors
           </p>
           <a
             href="#what-is-darag"
-            className="mt-6 inline-block bg-red-700 text-white font-semibold py-2 px-4 rounded-md shadow-lg hover:bg-red-600 transition-transform transform hover:scale-105"
+            className="mt-12 inline-block bg-red-700 text-white font-semibold py-2 px-4 rounded-md shadow-lg hover:bg-red-600 transition-transform transform hover:scale-105"
           >
             Learn More About Darag
           </a>
