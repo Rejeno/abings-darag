@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { FC } from 'react';
+import { isMobile } from 'react-device-detect';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './globals.css';
@@ -183,16 +184,17 @@ const HomePage: FC = () => {
     </div>
 
     {/* Image Carousel */}
-    <div className="md:flex-1">
+    <div className="md:flex-1 mt-4">
         <Carousel
           showThumbs={false}
           infiniteLoop
-          useKeyboardArrows
+          useKeyboardArrows={false}
           autoPlay
           dynamicHeight={false} // Prevent dynamic height adjustments
           showStatus={false}
           showIndicators
           showArrows
+          swipeable={!isMobile}
         >
           <div>
             <Image
