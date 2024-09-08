@@ -52,16 +52,15 @@ const HomePage: FC = () => {
               smokey and flavourful meat.
             </p>
           </div>
-          <div className="flex-1 flex items-center justify-center pl-12 sm:pl-8 md:pl-1">
+          <div className="flex sm:flex-row justify-center items-center">
             <iframe
               width="100%"
-              height="auto"
               src="https://www.youtube.com/embed/okVNNoqwRHA"
               title="Darag Chicken Video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-              className="rounded-lg shadow-lg md:w-[590px] md:h-[315px]" // Set specific size on medium screens and up
+              className="rounded-lg  w-[350px] :h-[200px] shadow-lg hidden lg:block  lg:w-[590px] lg:h-[315px]" // Set specific size on medium screens and up
             />
           </div>
         </div>
@@ -73,6 +72,18 @@ const HomePage: FC = () => {
             in the wild and look for their own food. They can reproduce and survive with minimal care and management.
           </p>
         </div>
+        <div className="flex sm:flex-row justify-center items-center mt-12">
+            <iframe
+              width="100%"
+              height="auto"
+              src="https://www.youtube.com/embed/okVNNoqwRHA"
+              title="Darag Chicken Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="rounded-lg shadow-lg w-full h-[250px] block lg:hidden md:w-[590px] md:h-[315px]" // Set specific size on medium screens and up
+            />
+          </div>
       </section>
 
       {/* Why Darag Chicken? */}
@@ -136,7 +147,7 @@ const HomePage: FC = () => {
           </div>
         </div>
 
-        <div className="flex md:flex-row justify-center gap-4">
+        <div className="flex md:flex-row justify-center">
           <iframe
             width="100%"
             height="auto"
@@ -145,7 +156,7 @@ const HomePage: FC = () => {
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-            className="rounded-lg shadow-lg w-[350px] h-[200px] sm:w-[590px] sm:h-[315px]"
+            className="rounded-lg shadow-lg w-full h-[250px] sm:w-[590px] sm:h-[315px]"
           />
         </div>
       </section>
