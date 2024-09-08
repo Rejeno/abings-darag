@@ -51,6 +51,10 @@ const HomePage: FC = () => {
               Known for their economical feeding habits, Darag chickens are ready for harvest after around 10 weeks.
               Traditionally used for the region’s famed Inasal or barbecued chicken or the more ubiquitous Filipino Tinola or chicken soup, the breed offers distinctively-lean,
               smokey and flavourful meat.
+              <br></br><br></br>
+              Darag refers to Philippine native chicken that predominates primarily in Western Visayas most especially in the island of Panay. 
+            These chickens descended from the indigenous Red Jungle Fowl (Gallus bankiva). They are known as having the same color and they forage 
+            in the wild and look for their own food. They can reproduce and survive with minimal care and management.
             </p>
           </div>
           <div className="flex sm:flex-row justify-center items-center">
@@ -64,14 +68,6 @@ const HomePage: FC = () => {
               className="rounded-lg  w-[350px] :h-[200px] shadow-lg hidden lg:block  lg:w-[590px] lg:h-[315px]" // Set specific size on medium screens and up
             />
           </div>
-        </div>
-
-        <div className="mt-4">
-          <p className="text-base md:text-lg text-justify">
-            Darag refers to Philippine native chicken that predominates primarily in Western Visayas most especially in the island of Panay. 
-            These chickens descended from the indigenous Red Jungle Fowl (Gallus bankiva). They are known as having the same color and they forage 
-            in the wild and look for their own food. They can reproduce and survive with minimal care and management.
-          </p>
         </div>
         <div className="flex sm:flex-row justify-center items-center mt-12">
             <iframe
