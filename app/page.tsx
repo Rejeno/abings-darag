@@ -53,18 +53,7 @@ const HomePage: FC = () => {
               smokey and flavourful meat.
             </p>
           </div>
-          <div className="flex justify-center items-center">
-            <iframe
-              width="100%"
-              height="auto"
-              src="https://www.youtube.com/embed/okVNNoqwRHA"
-              title="Darag Chicken Video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="rounded-lg shadow-lg hidden lg:block"
-            />
-          </div>
+          
         </div>
 
         <div className="mt-4">
