@@ -36,14 +36,14 @@ const Navigation: React.FC = () => {
         {Menus.map((menu, i) => (
           <li key={i} className="flex flex-col items-center w-full">
             <a
-              className="flex flex-col items-center justify-center pt-4 cursor-pointer"
+              className="flex flex-col items-center justify-center pb-2 pt-2 cursor-pointer" // Removed top padding and added bottom padding
               onClick={() => handleClick(i, menu.sectionId)}
             >
               {/* Icon */}
               <span
-                className={`text-2xl transition-all duration-300 ${
+                className={`text-xl p-1 transition-all duration-300 ${
                   i === active
-                    ? "text-red-500 glow"
+                    ? "text-red-500 glow" // Active state with glow effect
                     : "text-gray-500"
                 }`}
               >
@@ -52,7 +52,7 @@ const Navigation: React.FC = () => {
 
               {/* Always visible text */}
               <span
-                className={`text-sm font-bold transition-all duration-300 ${
+                className={`text-xs font-semibold mt-1 transition-all duration-300 ${
                   i === active ? "text-green-500" : "text-gray-500"
                 }`}
               >
