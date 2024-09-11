@@ -43,12 +43,13 @@ const HomePage: FC = () => {
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 md:mb-12 text-center">What is Darag Chicken?</h2>
 
         <div className="flex flex-col md:flex-row items-start md:space-x-8 mb-10">
-          <div className="flex justify-center items-center w-full md:w-auto mb-10 mt-4">
+          {/* Video visible only on web view */}
+          <div className="flex justify-center items-center w-full md:w-auto mb-10 mt-4 hidden md:flex">
             <iframe
               width="100%"
               height="auto"
               src="https://www.youtube.com/embed/okVNNoqwRHA"
-              title="Darag Chicken Video"
+              title="Darag Chicken Video Web"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -69,10 +70,23 @@ const HomePage: FC = () => {
               These chickens descended from the indigenous Red Jungle Fowl (Gallus bankiva). They are known as having the same color and they forage
               in the wild and look for their own food. They can reproduce and survive with minimal care and management.
             </p>
-
           </div>
 
+          {/* Video visible only on mobile view */}
+          <div className="flex justify-center items-center w-full md:w-auto mb-10 mt-10 md:hidden">
+            <iframe
+              width="100%"
+              height="auto"
+              src="https://www.youtube.com/embed/okVNNoqwRHA"
+              title="Darag Chicken Video Mobile"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="rounded-lg shadow-lg w-full h-[250px] sm:w-[590px] sm:h-[315px]"
+            />
+          </div>
         </div>
+
 
         <div className="flex flex-col md:flex-row items-start md:space-x-8 mb-10">
           <div className="flex-1">
@@ -111,7 +125,7 @@ const HomePage: FC = () => {
                   alt="Darag1"
                   layout="responsive"
                   width={800}
-                  height={400}
+                  height={600}
                   className="rounded-lg shadow-lg object-cover"
                 />
               </div>
@@ -121,7 +135,7 @@ const HomePage: FC = () => {
                   alt="Darag2"
                   layout="responsive"
                   width={800}
-                  height={400}
+                  height={600}
                   className="rounded-lg shadow-lg object-cover"
                 />
               </div>
@@ -131,7 +145,7 @@ const HomePage: FC = () => {
                   alt="Darag3"
                   layout="responsive"
                   width={800}
-                  height={400}
+                  height={600}
                   className="rounded-lg shadow-lg object-cover"
                 />
               </div>
