@@ -76,7 +76,8 @@ const HomePage: FC = () => {
             />
           </div>
       </section>
-      
+
+      <section id="why-darag" className="bg-gray-100 p-4 md:p-8 text-black mt-8">
  {/* Why Darag? */}
  <section id="why-darag" className="bg-gray-100 p-4 md:p-8 text-black mt-8">
   <h2 className="text-2xl md:text-3xl font-semibold mb-8">Why Darag Chicken?</h2>
@@ -93,8 +94,8 @@ const HomePage: FC = () => {
       </div>
       <p className="text-sm md:text-base text-justify">
         Darag chicken offers a rich and unique flavor profile that stands out from other breeds. 
-        Its savory meat and distinct eating experience are claimed to be better than commercial chicken meat. 
-       It also compensates with the lack of the gamy taste that is often associated with native and wild meats.
+        Its savory meat and distinct eating experience are claimed to be better than commercial chicken meat. The slower growth of Darag chickens also leads to a richer taste.
+       and with the lack of the gamy taste that is often associated with native and wild meats.
       </p>
 
       {/* Image with description */}
@@ -107,7 +108,7 @@ const HomePage: FC = () => {
           height={400}
           className="rounded-lg shadow-lg object-cover"
         />
-        <figcaption className="text-xs text-gray-400 mt-9 opacity-75 text-center">
+        <figcaption className="text-xs text-gray-400 mt-2 opacity-75 text-center">
           PHOTO COURTESY OF DOST
         </figcaption>
       </figure>
@@ -163,14 +164,26 @@ const HomePage: FC = () => {
           height={400}
           className="rounded-lg shadow-lg object-cover"
         />
-        <figcaption className="text-xs text-gray-400 mt-8 opacity-75 text-center">
+        <figcaption className="text-xs text-gray-400 mt-2 opacity-75 text-center">
           PHOTO COURTESY OF DOST
         </figcaption>
       </figure>
     </div>
   </div>
 </section>
-
+  <div className="flex justify-center">
+    <iframe
+      width="100%"
+      height="auto"
+      src="https://www.youtube.com/embed/x3JsMkvMFPg?si=yfMLs9KFlykSMPp3"
+      title="Darag Chicken Benefits Video"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+      className="rounded-lg shadow-lg w-full h-[250px] sm:w-[590px] sm:h-[315px]"
+    />
+  </div>
+</section>
 
       {/* Success Story with Carousel */}
       <section id="success-story" className="p-4 md:p-8 text-black mt-10">
