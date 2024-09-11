@@ -31,8 +31,8 @@ const Navigation: React.FC = () => {
 
   return (
     <div className="fixed bottom-0 w-full bg-white px-8 py-2 rounded-t-xl shadow-lg z-50 sm:hidden">
-      {/* Updated space between items */}
-      <ul className="flex items-center justify-between space-x-6"> {/* Reduced space between items */}
+      <ul className="flex items-center justify-between">
+        {/* Menu items */}
         {Menus.map((menu, i) => (
           <li key={i} className="flex flex-col items-center w-full">
             <a
@@ -43,7 +43,7 @@ const Navigation: React.FC = () => {
               <span
                 className={`text-2xl transition-all duration-300 ${
                   i === active
-                    ? "text-red-500 glow" // Glow class applied
+                    ? "text-red-500 glow"
                     : "text-gray-500"
                 }`}
               >
