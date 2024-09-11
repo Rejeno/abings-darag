@@ -12,24 +12,24 @@ const HomePage: FC = () => {
     <>
       {/* Hero Section */}
       <section
-        className="relative flex-grow -mt-10 py-16 md:py-32 lg:py-52"
+        className="relative min-h-screen flex items-center justify-center py-16 -mt-6 md:py-32 lg:py-52"
         style={{
           backgroundImage: 'url("/images/store.jpg")',
           backgroundSize: 'cover',
-          backgroundPosition: 'top',
+          backgroundPosition: 'center', // Center the background image
           backgroundRepeat: 'no-repeat',
         }}
       >
         <div className="absolute inset-0 bg-black opacity-80"></div>
         <div className="container mx-auto text-center text-white relative z-10 px-4">
-          <h1 className="text-3xl md:text-6xl lg:text-8xl font-bold leading-tight mb-4 lg:-mt-10">
+          <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold leading-tight mb-4 -mt-8">
             Discover the Pride of West Visayas
           </h1>
           <p className="mt-7 text-sm md:text-lg lg:text-3xl">
             Abing&apos;s Darag Chicken - Bringing the best of local flavors
           </p>
           <a
-            href="#what-is-darag"
+            href="#about"
             className="mt-12 inline-block bg-red-700 text-white font-semibold py-2 px-4 rounded-md shadow-lg hover:bg-red-600 transition-transform transform hover:scale-105"
           >
             Learn More About Darag
@@ -37,8 +37,9 @@ const HomePage: FC = () => {
         </div>
       </section>
 
+
       {/* What is Darag Chicken? */}
-      <section id="what-is-darag" className="p-4 md:p-8 text-black mt-8 md:mt-16">
+      <section id="about" className="p-4 md:p-8 text-black pt-24 md:mt-16">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 md:mb-12 text-center">What is Darag Chicken?</h2>
         
         <div className="flex flex-col md:flex-row items-start gap-4">
@@ -78,8 +79,8 @@ const HomePage: FC = () => {
       </section>
 
       {/* Why Darag? */}
-        <section id="why-darag" className="bg-gray-100 p-4 md:p-8 text-black mt-8">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-8">Why Darag Chicken?</h2>
+        <section id="benefits" className="bg-gray-100 p-4 md:p-8 text-black mt-8 pt-24">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-16 text-center">Why Darag Chicken?</h2>
 
           <div className="grid gap-6 md:gap-8 md:grid-cols-2 lg:grid-cols-3 mb-8">
 
@@ -164,7 +165,7 @@ const HomePage: FC = () => {
               </figure>
             </div>
           </div>
-          <div className="flex justify-center mt-8">
+          <div className="flex justify-center mt-12">
             <iframe
               width="100%"
               height="auto"
@@ -179,8 +180,8 @@ const HomePage: FC = () => {
         </section>
 
       {/* Success Story with Carousel */}
-      <section id="success-story" className="p-4 md:p-8 text-black mt-10">
-        <h2 className="text-2xl md:text-5xl font-bold mb-24 text-center">
+      <section id="story" className="p-4 md:p-8 text-black mt-10">
+        <h2 className="text-2xl md:text-5xl font-bold mb-16 text-center mt-12">
           Who is Abing&apos;s Darag?
         </h2>
         <div className="flex flex-col md:flex-row items-start md:space-x-8">

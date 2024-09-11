@@ -13,10 +13,19 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        sans: ['Montserrat', 'sans-serif'], // Apply font globally
+        sans: ['Montserrat', 'sans-serif'],
+      },
+      translate: {
+        // Add custom translate values here
+        '1': '0.25rem', // Example
+        '20': '5rem',   // Example
+        '36': '9rem',   // Example
+        '56': '14rem',  // Example
+        '72': '18rem',  // Example
       },
     },
   },
   plugins: [],
 };
+
 export default config;
