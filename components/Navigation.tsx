@@ -4,17 +4,16 @@ import { FaBook, FaBoxes, FaEnvelope, FaInfoCircle, FaStar } from "react-icons/f
 interface MenuItem {
   name: string;
   icon: JSX.Element;
-  translateX: number;
   sectionId: string;
 }
 
 const Navigation: React.FC = () => {
   const Menus: MenuItem[] = [
-    { name: "About", icon: <FaInfoCircle />, translateX: 4, sectionId: "about" },
-    { name: "Benefits", icon: <FaStar />, translateX: 80, sectionId: "benefits" },
-    { name: "Story", icon: <FaBook />, translateX: 144, sectionId: "story" },
-    { name: "Suppliers", icon: <FaBoxes />, translateX: 224, sectionId: "suppliers" },
-    { name: "Contact", icon: <FaEnvelope />, translateX: 288, sectionId: "contact" },
+    { name: "About", icon: <FaInfoCircle />, sectionId: "about" },
+    { name: "Benefits", icon: <FaStar />, sectionId: "benefits" },
+    { name: "Story", icon: <FaBook />, sectionId: "story" },
+    { name: "Suppliers", icon: <FaBoxes />, sectionId: "suppliers" },
+    { name: "Contact", icon: <FaEnvelope />, sectionId: "contact" },
   ];
 
   const [active, setActive] = useState<number>(0);
@@ -32,18 +31,8 @@ const Navigation: React.FC = () => {
 
   return (
     <div className="fixed bottom-0 w-full bg-white px-8 py-2 rounded-t-xl shadow-lg z-50 sm:hidden">
-      <ul className="relative flex items-center justify-between">
-        {/* Active indicator circle */}
-        <span
-          className={`bg-red-500 border-4 border-gray-200 h-16 w-16 rounded-full flex items-center justify-center text-white text-2xl absolute -top-8 transition-transform duration-300`}
-          style={{
-            transform: `translateX(${Menus[active].translateX}px)`,
-          }}
-        >
-          {Menus[active].icon}
-        </span>
-
-        {/* Menu items */}
+      {/* Updated space between items */}
+      <ul className="flex items-center justify-between space-x-6"> {/* Reduced space between items */}
         {Menus.map((menu, i) => (
           <li key={i} className="flex flex-col items-center w-full">
             <a
@@ -52,17 +41,19 @@ const Navigation: React.FC = () => {
             >
               {/* Icon */}
               <span
-                className={`text-2xl transition-opacity duration-300 ${
-                  i === active ? "opacity-0" : "text-gray-500"
+                className={`text-2xl transition-all duration-300 ${
+                  i === active
+                    ? "text-red-500 glow" // Glow class applied
+                    : "text-gray-500"
                 }`}
               >
                 {menu.icon}
               </span>
 
-              {/* Text that fades in under the circle */}
+              {/* Always visible text */}
               <span
-                className={`text-sm font-bold transition-opacity duration-300 ${
-                  i === active ? "opacity-100 text-green-500" : "opacity-0"
+                className={`text-sm font-bold transition-all duration-300 ${
+                  i === active ? "text-green-500" : "text-gray-500"
                 }`}
               >
                 {menu.name}

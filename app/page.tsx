@@ -15,14 +15,17 @@ const HomePage: FC = () => {
         className="relative min-h-screen flex items-center justify-center py-16 -mt-6 md:py-32 lg:py-52"
         style={{
           backgroundImage: 'url("/images/store.jpg")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center', // Center the background image
+          backgroundSize: 'cover', // Ensure it still covers the section
+          backgroundPosition: 'top', // Default position for larger screens
           backgroundRepeat: 'no-repeat',
         }}
       >
+        {/* Overlay */}
         <div className="absolute inset-0 bg-black opacity-80"></div>
+
+        {/* Content */}
         <div className="container mx-auto text-center text-white relative z-10 px-4">
-          <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold leading-tight mb-4 -mt-8">
+          <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold leading-tight mb-4 -mt-12">
             Discover the Pride of West Visayas
           </h1>
           <p className="mt-7 text-sm md:text-lg lg:text-3xl">
@@ -35,7 +38,17 @@ const HomePage: FC = () => {
             Learn More About Darag
           </a>
         </div>
+
+        {/* Media Query for Mobile Adjustments */}
+        <style jsx>{`
+          @media (max-width: 768px) {
+            section {
+              background-position: right 20%; /* Shift image to the right on mobile */
+            }
+          }
+        `}</style>
       </section>
+
 
 
       {/* What is Darag Chicken? */}
