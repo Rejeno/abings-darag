@@ -39,7 +39,7 @@ const HomePage: FC = () => {
 
 
       {/* What is Darag Chicken? */}
-      <section id="what-is-darag" className="p-4 md:p-8 text-black mt-8 md:mt-16">
+      <section id="about" className="p-4 md:p-8 text-black mt-8 md:mt-16">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 md:mb-12 text-center">What is Darag Chicken?</h2>
 
         <div className="flex flex-col md:flex-row items-start md:space-x-8 mb-10">
