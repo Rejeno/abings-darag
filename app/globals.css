@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "~leaflet/dist/leaflet.css";
+
+
 /* Custom Styles */
 .fade-in {
   animation: fadeIn 1s ease-in-out;
@@ -54,4 +57,6 @@ html {
   text-shadow: 0 0 8px rgba(255, 0, 0, 0.8); /* Red glow effect */
 }
 
-
+.my-map-class {
+  height: 400px;
+}

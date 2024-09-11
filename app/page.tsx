@@ -1,11 +1,15 @@
 'use client'
 
+import ContactSection from '@/components/Contact';
+import SuppliersSection from '@/components/Suppliers';
+import 'leaflet/dist/leaflet.css';
 import Image from 'next/image';
 import { FC } from 'react';
 import { isMobile } from 'react-device-detect';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './globals.css';
+
 
 const HomePage: FC = () => {
   return (
@@ -57,7 +61,7 @@ const HomePage: FC = () => {
 
         <div className="flex flex-col md:flex-row items-start md:space-x-8 mb-10">
           {/* Video visible only on web view */}
-          <div className="flex justify-center items-center w-full md:w-auto mb-10 mt-4 hidden md:flex">
+          <div className="justify-center items-center w-full md:w-auto mb-10 mt-4 hidden md:flex">
             <iframe
               width="100%"
               height="auto"
@@ -338,20 +342,10 @@ const HomePage: FC = () => {
         </div>
       </section>
 
-      <section id="suppliers" className="p-4 md:p-8 text-black">
-        <h2 className="text-2xl md:text-3xl font-semibold mb-4">Our Suppliers</h2>
-        <p className="text-base md:text-lg">Diri namon gina kuha ang amon nga mga manok</p>
-        <div className="mt-4">
-          <Image
-            src="/images/success.jpg"
-            alt="Success Story"
-            layout="responsive"
-            width={600}
-            height={400}
-            className="rounded-lg shadow-lg"
-          />
-        </div>
-      </section>
+      <SuppliersSection />
+      <ContactSection />
+
+      
     </>
   );
 };
