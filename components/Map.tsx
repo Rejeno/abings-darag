@@ -1,3 +1,5 @@
+'use client'
+
 import L from 'leaflet'; // Leaflet's Icon for custom marker images
 import 'leaflet/dist/leaflet.css';
 import React from 'react';

@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react';
 import { FaEnvelope, FaFacebook, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 import Map from './Map';
