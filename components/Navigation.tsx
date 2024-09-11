@@ -30,7 +30,7 @@ const Navigation: React.FC = () => {
   };
 
   return (
-    <div className="fixed bottom-0 w-full bg-white px-8 py-2 rounded-t-xl shadow-lg z-50 sm:hidden">
+    <div className="fixed bottom-0 w-full bg-white px-2 py-2 rounded-t-xl shadow-lg z-50 sm:hidden">
       <ul className="flex items-center justify-between">
         {/* Menu items */}
         {Menus.map((menu, i) => (
