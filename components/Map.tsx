@@ -1,3 +1,4 @@
+import L from 'leaflet'; // Import Leaflet types directly
 import dynamic from 'next/dynamic';
 import { useEffect, useState } from 'react';
 
@@ -13,7 +14,7 @@ interface MapProps {
 
 const Map: React.FC<MapProps> = ({ center, zoom }) => {
   const [isClient, setIsClient] = useState(false);
-  const [customMarkerIcon, setCustomMarkerIcon] = useState<any>(null);
+  const [customMarkerIcon, setCustomMarkerIcon] = useState<L.Icon | null>(null); // Use L.Icon type
 
   useEffect(() => {
     // Set client-side state
