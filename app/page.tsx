@@ -296,7 +296,7 @@ const HomePage: FC = () => {
                the study of the Darag chicken was perfected. 
 
                <br></br><br></br>
-               Dr. Cocjin’s dream was to make Abing's Darag not just a household name, but a destination—a place where visitors could savor 
+               Dr. Cocjin dream was to make Abing's Darag not just a household name, but a destination—a place where visitors could savor 
                 the unique flavors of Darag chicken dishes. Today, Abing's Darag stands as a testament to Filipino innovation, offering a taste 
                 of tradition perfected over decades.
             </p>
