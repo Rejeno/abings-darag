@@ -282,15 +282,28 @@ const HomePage: FC = () => {
           {/* Story Text */}
           <div className="md:flex-1 text-justify">
             <p className="text-base md:text-lg">
-              Starting as a small karinderia, Abing&apos;s Darag has grown into a leading business, known for Darag chicken breeding
-              baeufgfb ueghfbqfjqf9 hefpighq39[fqefh qpeiurghfpiqwbndpiqwhr ugwefuobweourg08qer]...
+            
+
+              What began as a small "karinderia" has grown into a leading business, 
+              renowned for breeding the native Darag chicken. The journey started at West Visayas State University, 
+              where Ma'am Ladd recognized the potential for a startup focused on Darag chicken, a breed unique to the Philippines.
+              <br></br><br></br>
+          
+               During Martial Law, a group of Filipino scientists and researchers was sent abroad to gather knowledge and expertise to 
+               improve the Philippine livestock industry. It was in the farmlands of Tokyo where Dr. Bernabe Cocjin first encountered the 
+               Hinai-dori, Japan's native chicken. This moment sparked an inspiration in the young researcher from Panay, igniting a vision 
+               that would revolutionize the local poultry industry. After 20 years and eight generations of careful breeding and purification, 
+               the study of the Darag chicken was perfected. 
+
+               <br></br><br></br>
+               Dr. Cocjin’s dream was to make Abing's Darag not just a household name, but a destination—a place where visitors could savor 
+                the unique flavors of Darag chicken dishes. Today, Abing's Darag stands as a testament to Filipino innovation, offering a taste 
+                of tradition perfected over decades.
             </p>
             <br></br>
             <p className="text-base md:text-lg">
-              The brand stands as a symbol of dedication to quality and local tradition.ebfuogqwfd qwgrougwjdebquowdf quowdfouqwvfdofuqwf
-              qwfghqouwb yhffoqghwfo qw oiwgouqwgdoiqhw  dq iwghdouqwgdohqwfg ouqgfougqwfo qw Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Quas quod enim autem exercitationem quibusdam praesentium et corporis earum officia ut, voluptate voluptas quo officiis omnis maiores consequatur
-              dolorem, consectetur velit?
+              The brand stands as a symbol of dedication to quality and local tradition. Abings Darag dishes sticks to the traditional
+              dishes here in the Phillipines like.
             </p>
           </div>
 
