@@ -107,7 +107,7 @@ const HomePage: FC = () => {
 
         <div className="flex flex-col md:flex-row items-start md:space-x-8 mb-10">
           <div className="flex-1">
-            <p className="md:flex-2 text-justify mb-10">
+            <p className="md:flex-2 text-justify mb-10 mt-10">
               Darag is one of the many native chicken breeds of the Philippines.
               It is endemic to the islands of Panay and Guimaras and evolved from the Red Jungle Fowl (Gallus gallus bankiva), which has been roaming around Southeast Asia for thousands of years.
               To the uninitiated, Darag might seem indistinguishable from other types of native chicken breeds.
@@ -124,7 +124,7 @@ const HomePage: FC = () => {
           </div>
 
           {/* Image Carousel */}
-          <div className="md:flex-1 mt-4">
+          <div className="md:flex-1">
             <Carousel
               showThumbs={false}
               infiniteLoop
@@ -137,35 +137,36 @@ const HomePage: FC = () => {
               swipeable={!isMobile}
             >
               <div>
-                <Image
-                  src="/images/d1.jpg"
-                  alt="Darag1"
-                  layout="responsive"
-                  width={800}
-                  height={600}
-                  className="rounded-lg shadow-lg object-cover"
-                />
+                <figure className="mt-2 flex flex-col items-center">
+                  <Image
+                    src="/images/d1.jpg"
+                    alt="Darag1"
+                    layout="responsive"
+                    width={800}
+                    height={300}
+                    className="rounded-lg shadow-lg object-cover"
+                  />
+                  <figcaption className="text-xs text-gray-400 mt-2 opacity-75 text-center">
+                    PHOTO COURTESY OF DOST
+                  </figcaption>
+                </figure>
               </div>
               <div>
-                <Image
-                  src="/images/d2.jpg"
-                  alt="Darag2"
-                  layout="responsive"
-                  width={800}
-                  height={600}
-                  className="rounded-lg shadow-lg object-cover"
-                />
+                <figure className="mt-2 flex flex-col items-center">
+                  <Image
+                    src="/images/d2.jpg"
+                    alt="Darag2"
+                    layout="responsive"
+                    width={800}
+                    height={400}
+                    className="rounded-lg shadow-lg object-cover"
+                  />
+                  <figcaption className="text-xs text-gray-400 mt-2 opacity-75 text-center">
+                    PHOTO COURTESY OF DOST
+                  </figcaption>
+                </figure>
               </div>
-              <div>
-                <Image
-                  src="/images/d3.jpg"
-                  alt="Darag3"
-                  layout="responsive"
-                  width={800}
-                  height={600}
-                  className="rounded-lg shadow-lg object-cover"
-                />
-              </div>
+
             </Carousel>
           </div>
 
@@ -282,31 +283,31 @@ const HomePage: FC = () => {
           {/* Story Text */}
           <div className="md:flex-1 text-justify">
             <p className="text-base md:text-lg">
-            
 
-            What began as a small &quot;karinderia&quot; has grown into a leading business, 
-           renowned for breeding the native Darag chicken. The journey started at West Visayas State University, 
-            where Ma&apos;am Ladd recognized the potential for a startup focused on Darag chicken, a breed unique to the Philippines.
+
+              What began as a small &quot;karinderia&quot; has grown into a leading business,
+              renowned for breeding the native Darag chicken. The journey started at West Visayas State University,
+              where Ma&apos;am Ladd recognized the potential for a startup focused on Darag chicken, a breed unique to the Philippines.
 
               <br></br><br></br>
-          
-              During Martial Law, a group of Filipino scientists and researchers was sent abroad to gather knowledge and expertise to 
-            improve the Philippine livestock industry. It was in the farmlands of Tokyo where Dr. Bernabe Cocjin first encountered the 
-            Hinai-dori, Japan&apos;s native chicken. This moment sparked an inspiration in the young researcher from Panay, igniting a vision 
-            that would revolutionize the local poultry industry. After 20 years and eight generations of careful breeding and purification, 
-            the study of the Darag chicken was perfected.
+
+              During Martial Law, a group of Filipino scientists and researchers was sent abroad to gather knowledge and expertise to
+              improve the Philippine livestock industry. It was in the farmlands of Tokyo where Dr. Bernabe Cocjin first encountered the
+              Hinai-dori, Japan&apos;s native chicken. This moment sparked an inspiration in the young researcher from Panay, igniting a vision
+              that would revolutionize the local poultry industry. After 20 years and eight generations of careful breeding and purification,
+              the study of the Darag chicken was perfected.
 
 
-               <br></br><br></br>
-               Dr. Cocjin&apos;s dream was to make Abing&apos;s Darag not just a household name, but a destination—a place where visitors could savor 
-              the unique flavors of Darag chicken dishes. Today, Abing&apos;s Darag stands as a testament to Filipino innovation, offering a taste 
+              <br></br><br></br>
+              Dr. Cocjin&apos;s dream was to make Abing&apos;s Darag not just a household name, but a destination—a place where visitors could savor
+              the unique flavors of Darag chicken dishes. Today, Abing&apos;s Darag stands as a testament to Filipino innovation, offering a taste
               of tradition perfected over decades.
 
             </p>
             <br></br>
             <p className="text-base md:text-lg">
               The brand stands as a symbol of dedication to quality and local tradition. Abings Darag dishes sticks to the traditional
-              dishes here in the Philippines like Adobong manok, Tinola, Lechon, and Tinuom. 
+              dishes here in the Philippines like Adobong manok, Tinola, Lechon, and Tinuom.
             </p>
           </div>
 
@@ -361,7 +362,7 @@ const HomePage: FC = () => {
       <SuppliersSection />
       <ContactSection />
 
-      
+
     </>
   );
 };
