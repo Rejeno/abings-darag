@@ -13,7 +13,7 @@ const SuppliersSection: React.FC = () => {
     <section id="suppliers" className="p-4 md:p-8 text-black bg-gray-50 mt-16">
       <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-center">Our Suppliers</h2>
       <p className="text-base md:text-lg text-center mb-16 mt-4">
-      We proudly source our Darag chickens from the esteemed members of the Panay Darag Breeders Association (PADABA)
+      We proudly source our Darag chickens from the esteemed members of the Panay Darag Chicken Breeders Association (PADABA)
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-6 lg:gap-8">

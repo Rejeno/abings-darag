@@ -275,7 +275,7 @@ const HomePage: FC = () => {
       {/* Success Story with Carousel */}
       <section id="story" className="p-4 md:p-8 text-black mt-10 mb-16">
         <h2 className="text-2xl md:text-5xl font-bold mb-16 text-center mt-12">
-          What is Abing&apos;s Darag?
+          What is Abing&apos;s Darag Chicken Trading?
         </h2>
         <div className="flex flex-col md:flex-row items-start md:space-x-8">
           {/* Story Text */}
@@ -284,7 +284,7 @@ const HomePage: FC = () => {
 
 
               What began as a small &quot;karinderia&quot; has grown into a leading business,
-              renowned for breeding the native Darag chicken. The journey started at West Visayas State University,
+              renowned for studying and trading the native Darag chicken. The journey started at West Visayas State University,
               where Ma&apos;am Ladd recognized the potential for a startup focused on Darag chicken, a breed unique to the Philippines.
 
               <br></br><br></br>
@@ -359,7 +359,7 @@ const HomePage: FC = () => {
 
    <section id="behindAbingsDarag" className="p-4 md:p-8 text-black mt-10">
         <h3 className="text-2xl md:text-5xl font-bold mb-16 text-center">
-          Who&apos;s Behind Abing&apos;s Darag?
+          Who&apos;s Behind Abing&apos;s Darag Chicken Trading?
         </h3>
         
         <div className="flex flex-col md:flex-row items-start md:space-x-8 mt-12">
