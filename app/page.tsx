@@ -82,9 +82,9 @@ const HomePage: FC = () => {
               Hens have sandy or yellowish-brown plumage. Cocks weigh an average of 1.3 kilogrammes while hens reach about 1.1 kilogrammes.
               Known for their economical feeding habits, Darag chickens are ready for harvest after around 10 weeks.
               <br /><br />
-              Traditionally used for the region’s famed Inasal or barbecued chicken or the more ubiquitous Filipino Tinola or chicken soup, the breed offers distinctively-lean,
+              Traditionally used for the region&apos;s famed Inasal or barbecued chicken or the more ubiquitous Filipino Tinola or chicken soup, the breed offers distinctively-lean,
               smokey and flavourful meat.  Darag refers to Philippine native chicken that predominates primarily in Western Visayas most especially in the island of Panay.
-              These chickens descended from the indigenous Red Jungle Fowl (Gallus bankiva). They are known as having the same color and they forage
+              These chickens descended from the indigenous Red Jungle Fowl &apos;Gallus bankiva&apos;. They are known as having the same color and they forage
               in the wild and look for their own food. They can reproduce and survive with minimal care and management.
             </p>
           </div>
@@ -113,7 +113,7 @@ const HomePage: FC = () => {
               To the uninitiated, Darag might seem indistinguishable from other types of native chicken breeds.
               One must be on the lookout for certain characteristics to identify a genuine Darag.
               <br></br><br></br>
-              Darag, meaning yellow in ‘Kinaray-a’ or Ilonggo, is most recognizable for its yellowish-brown plumage.
+              Darag, meaning yellow in &apos;Kinaray-a&apos;s or Ilonggo, is most recognizable for its yellowish-brown plumage.
               The color of its feathers is a combination of dark brown and golden yellow with a distinguishable stroke of
               yellow line on the middle part, from base to tip of each feather.
               Accompanying the golden coat of Darag are its gray shanks or chicken feet.
@@ -214,7 +214,7 @@ const HomePage: FC = () => {
               <h3 className="text-lg md:text-xl font-semibold">Health Benefits</h3>
             </div>
             <p className="text-sm md:text-base text-justify">
-              Packed with essential nutrients and lower in fat, Darag chicken is a healthier choice. Darag chicken’s natural diet and organic dietary provide plenty of health benefits. Compared to broiler chickens, these chickens are usually leaner, have less fat, and have higher protein content. They’re also healthy since they’re full of vitamins and other important nutrients.
+              Packed with essential nutrients and lower in fat, Darag chicken is a healthier choice. Darag chicken&apos;s natural diet and organic dietary provide plenty of health benefits. Compared to broiler chickens, these chickens are usually leaner, have less fat, and have higher protein content. They&apos;sre also healthy since they&apos;re full of vitamins and other important nutrients.
             </p>
             {/* Image with description */}
             <figure className="mt-4 flex flex-col items-center">
@@ -241,7 +241,7 @@ const HomePage: FC = () => {
               <h3 className="text-lg md:text-xl font-semibold">Sustainable Farming</h3>
             </div>
             <p className="text-sm md:text-base text-justify">
-              Darag chicken farming has a lower environmental impact, making it a sustainable choice. Organic materials like natural feeds and organic supplements contribute to the chicken’s better nutritional profile, and it also minimizes the environmental impact by reducing reliance on synthetic products in farming.
+              Darag chicken farming has a lower environmental impact, making it a sustainable choice. Organic materials like natural feeds and organic supplements contribute to the chicken&apos;s better nutritional profile, and it also minimizes the environmental impact by reducing reliance on synthetic products in farming.
             </p>
             {/* Image with description */}
             <figure className="mt-4 flex flex-col items-center">
@@ -284,7 +284,7 @@ const HomePage: FC = () => {
             <p className="text-base md:text-lg">
             
 
-            What began as a small "karinderia" has grown into a leading business, 
+            What began as a small &quot;karinderia&quot; has grown into a leading business, 
            renowned for breeding the native Darag chicken. The journey started at West Visayas State University, 
             where Ma&apos;am Ladd recognized the potential for a startup focused on Darag chicken, a breed unique to the Philippines.
 
