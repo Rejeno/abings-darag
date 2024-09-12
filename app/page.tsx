@@ -306,7 +306,7 @@ const HomePage: FC = () => {
             <br></br>
             <p className="text-base md:text-lg">
               The brand stands as a symbol of dedication to quality and local tradition. Abings Darag dishes sticks to the traditional
-              dishes here in the Phillipines like Adobong manok, Tinola, Lechon, and Tinuom. 
+              dishes here in the Philippines like Adobong manok, Tinola, Lechon, and Tinuom. 
             </p>
           </div>
 
