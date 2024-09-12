@@ -200,9 +200,6 @@ const HomePage: FC = () => {
                 height={400}
                 className="rounded-lg shadow-lg object-cover"
               />
-              <figcaption className="text-xs text-gray-400 mt-2 opacity-75 text-center">
-                PHOTO COURTESY OF DOST
-              </figcaption>
             </figure>
           </div>
 
@@ -220,16 +217,13 @@ const HomePage: FC = () => {
             {/* Image with description */}
             <figure className="mt-4 flex flex-col items-center">
               <Image
-                src="/images/Healthy.jpg"
+                src="/images/Healthy.JPG"
                 alt="Healthy Meal with Darag Chicken"
                 layout="responsive"
                 width={600}
                 height={400}
                 className="rounded-lg shadow-lg object-cover"
               />
-              <figcaption className="text-xs text-gray-400 mt-2 opacity-75 text-center">
-                PHOTO COURTESY OF DOST
-              </figcaption>
             </figure>
           </div>
 
