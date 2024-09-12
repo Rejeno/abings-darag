@@ -157,7 +157,7 @@ const HomePage: FC = () => {
                 />
               </div>
             </Carousel>
-          </div>s
+          </div>
 
         </div>
       </section>
