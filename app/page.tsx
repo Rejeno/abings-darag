@@ -57,11 +57,11 @@ const HomePage: FC = () => {
 
       {/* What is Darag Chicken? */}
       <section id="about" className="p-4 md:p-8 text-black mt-8 md:mt-16">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 md:mb-12 text-center">What is Darag Chicken?</h2>
+        <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-8 md:mb-12 text-center">What is Darag Chicken?</h2>
 
         <div className="flex flex-col md:flex-row items-start md:space-x-8 mb-10">
           {/* Video visible only on web view */}
-          <div className="justify-center items-center w-full md:w-auto mb-10 mt-4 hidden md:flex">
+          <div className="justify-center items-center w-full md:w-auto mb-10 sm:mt-20 hidden md:flex">
             <iframe
               width="100%"
               height="auto"
@@ -74,7 +74,7 @@ const HomePage: FC = () => {
             />
           </div>
 
-          <div className="flex-1">
+          <div className="flex-1 text-lg ">
             <p className="md:flex-2 text-justify">
               This chicken breed originates from Panay Island in the Western Visayas, near the world-famous beaches of Boracay.
               It is rapidly rising in popularity for very good reason. The typical plumage for roosters, locally called Labuyo or Alimbuyog,
@@ -106,8 +106,8 @@ const HomePage: FC = () => {
 
 
         <div className="flex flex-col md:flex-row items-start md:space-x-8 mb-10">
-          <div className="flex-1">
-            <p className="md:flex-2 text-justify mb-10 mt-10">
+          <div className="flex-1 text-lg">
+            <p className="md:flex-2 text-justify mb-10 -mt-6 sm:mt-10">
               Darag is one of the many native chicken breeds of the Philippines.
               It is endemic to the islands of Panay and Guimaras and evolved from the Red Jungle Fowl (Gallus gallus bankiva), which has been roaming around Southeast Asia for thousands of years.
               To the uninitiated, Darag might seem indistinguishable from other types of native chicken breeds.
@@ -124,7 +124,7 @@ const HomePage: FC = () => {
           </div>
 
           {/* Image Carousel */}
-          <div className="md:flex-1">
+          <div className="md:flex-1 -mt-6 sm:mt-20 ">
             <Carousel
               showThumbs={false}
               infiniteLoop
@@ -137,45 +137,34 @@ const HomePage: FC = () => {
               swipeable={!isMobile}
             >
               <div>
-                <figure className="mt-2 flex flex-col items-center">
-                  <Image
-                    src="/images/d1.jpg"
-                    alt="Darag1"
-                    layout="responsive"
-                    width={800}
-                    height={300}
-                    className="rounded-lg shadow-lg object-cover"
-                  />
-                  <figcaption className="text-xs text-gray-400 mt-2 opacity-75 text-center">
-                    PHOTO COURTESY OF DOST
-                  </figcaption>
-                </figure>
+                <Image
+                  src="/images/d1.jpg"
+                  alt="Darag Chicken Breeding"
+                  layout="responsive"
+                  width={800}
+                  height={400}
+                  className="rounded-lg shadow-lg object-cover"
+                />
               </div>
               <div>
-                <figure className="mt-2 flex flex-col items-center">
-                  <Image
-                    src="/images/d2.jpg"
-                    alt="Darag2"
-                    layout="responsive"
-                    width={800}
-                    height={400}
-                    className="rounded-lg shadow-lg object-cover"
-                  />
-                  <figcaption className="text-xs text-gray-400 mt-2 opacity-75 text-center">
-                    PHOTO COURTESY OF DOST
-                  </figcaption>
-                </figure>
+                <Image
+                  src="/images/d2.jpg"
+                  alt="Darag Chicken Preparation"
+                  layout="responsive"
+                  width={800}
+                  height={600}
+                  className="rounded-lg shadow-lg object-cover"
+                />
               </div>
-
             </Carousel>
-          </div>
+          </div>s
 
         </div>
       </section>
 
       {/* Why Darag? */}
-      <section id="benefits" className="bg-gray-100 p-4 md:p-8 text-black mt-8 pt-24">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-16 text-center">Why Darag Chicken?</h2>
+      <section id="benefits" className="bg-gray-100 p-4 md:p-8 text-black mt-2 sm:pt-24">
+        <h2 className="text-2xl md:text-3xl lg:text-5xl font-semibold mb-20 text-center">Why Darag Chicken?</h2>
 
         <div className="grid gap-6 md:gap-8 md:grid-cols-2 lg:grid-cols-3 mb-8">
 
@@ -255,37 +244,38 @@ const HomePage: FC = () => {
           </div>
         </div>
         
-        <div className="flex flex-col sm:flex-row justify-center mt-12 items-center sm:items-start space-y-6 sm:space-y-0 sm:space-x-6">
+        <div className="flex flex-col sm:flex-row justify-center mt-12 items-center sm:items-start space-y-6 sm:space-y-0 sm:space-x-2">
         {/* YouTube Video on the Left */}
-           <div className="w-full sm:w-2/3">
-           <iframe
-              width="100%"
-               height="auto"
-              src="https://www.youtube.com/embed/x3JsMkvMFPg?si=yfMLs9KFlykSMPp3"
-               title="Darag Chicken Benefits Video"
-              frameBorder="0"
-               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="rounded-lg shadow-lg w-full h-[250px] sm:h-[315px]"
-         />
+        <div className="flex flex-col sm:flex-row justify-center items-center sm:items-start mt-12 space-y-6 sm:space-y-0 sm:space-x-6">
+  
+        {/* left Side Text */}
+        <div className="w-full sm:w-1/3 px-4 sm:px-8 -pl-4">
+          <p className="text-gray-700 text-justify mb-4 -mt-12 sm:mt-10">
+          Darag chicken is a native breed that offers richer flavor and better nutritional value compared to broiler chickens. Raised organically, they benefit from a natural diet, resulting in meat that is not only healthier but also more flavorful. This traditional breed has been cherished for its unique taste and superior quality for generations. Discover more about its remarkable qualities and benefits by checking out the video!
+          </p>
         </div>
-
-            {/* Right Side Text */}
-            <div className="w-full sm:w-1/3">
-           <p className="text-gray-700" text-justify>
-              Darag chicken is a native breed that offers richer flavor and better nutritional value compared to broiler chickens.
-               They are raised organically, ensuring healthier meat that&apos;s full of essential nutrients. 
-               Learn more in the video!
-           </p>
-         </div>
+        {/* YouTube Video on the right */}
+        <div className="w-full sm:w-2/3">
+          <iframe
+            width="100%"
+            height="auto"
+            src="https://www.youtube.com/embed/x3JsMkvMFPg?si=yfMLs9KFlykSMPp3"
+            title="Darag Chicken Benefits Video"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="rounded-lg shadow-lg h-[250px] sm:h-[350px]"
+          />
         </div>
-
+      </div>
+      </div>
       </section>
 
+
       {/* Success Story with Carousel */}
-      <section id="story" className="p-4 md:p-8 text-black mt-10">
+      <section id="story" className="p-4 md:p-8 text-black mt-10 mb-16">
         <h2 className="text-2xl md:text-5xl font-bold mb-16 text-center mt-12">
-          Who is Abing&apos;s Darag?
+          What is Abing&apos;s Darag?
         </h2>
         <div className="flex flex-col md:flex-row items-start md:space-x-8">
           {/* Story Text */}
@@ -320,7 +310,7 @@ const HomePage: FC = () => {
           </div>
 
           {/* Image Carousel */}
-          <div className="md:flex-1 mt-4">
+          <div className="md:flex-1 mt-8 sm:mt-24 ">
             <Carousel
               showThumbs={false}
               infiniteLoop
@@ -338,7 +328,7 @@ const HomePage: FC = () => {
                   alt="Darag Chicken Breeding"
                   layout="responsive"
                   width={800}
-                  height={400}
+                  height={600}
                   className="rounded-lg shadow-lg object-cover"
                 />
               </div>
@@ -348,7 +338,7 @@ const HomePage: FC = () => {
                   alt="Darag Chicken Preparation"
                   layout="responsive"
                   width={800}
-                  height={400}
+                  height={600}
                   className="rounded-lg shadow-lg object-cover"
                 />
               </div>
@@ -358,7 +348,7 @@ const HomePage: FC = () => {
                   alt="Abing's Darag Farm"
                   layout="responsive"
                   width={800}
-                  height={400}
+                  height={600}
                   className="rounded-lg shadow-lg object-cover"
                 />
               </div>
@@ -368,26 +358,12 @@ const HomePage: FC = () => {
    </section>   
 
    <section id="behindAbingsDarag" className="p-4 md:p-8 text-black mt-10">
-  <h3 className="text-xl md:text-3xl font-bold mb-4 text-center">
-    Who&apos;s Behind Abing&apos;s Darag?
-  </h3>
-  
-  <div className="flex flex-col md:flex-row items-start md:space-x-8">
-    {/* Description Text */}
-    <div className="md:flex-1 text-justify">
-      <p className="text-base md:text-lg">
-        Abing&apos;s Darag might be small in size, but it carries immense significance. During the grand opening, high-ranking officials, business leaders, and faculty from West Visayas State University (WVSU) attended, not because of the store’s physical scale, but because of its symbolic importance. The event marked an essential step in establishing a regional trademark for Iloilo City—a brand deeply rooted in local culture and agricultural innovation. 
-        <br></br><br></br>
-        Abing&apos;s Darag was the perfect choice for this effort because of its commitment to promoting the native Darag chicken, a breed that is unique to Panay Island. The store’s ability to preserve tradition while promoting local sustainability made it an attractive platform for creating a distinct culinary identity for Iloilo City. Many of those present at the opening recognized this opportunity and wanted to be part of shaping the city’s cultural and economic landscape through this new culinary movement.
-      </p>
-      <br></br>
-      <p className="text-base md:text-lg">
-        Moreover, the store&apos;s manager, Ms. Abing Ladd, played a crucial role in making the establishment a central figure in this larger effort. As a WVSU graduate and a respected entrepreneur, she has helped bring together the academic, agricultural, and business sectors to support the growth of the local economy through a focus on the Darag chicken. Abing’s Darag, despite its modest size, now stands at the forefront of this growing movement, paving the way for Iloilo City to be recognized as a culinary destination.
-      </p>
-    </div>
-
-    {/* Image Carousel */}
-    <div className="md:flex-1 mt-4">
+        <h3 className="text-2xl md:text-5xl font-bold mb-16 text-center">
+          Who&apos;s Behind Abing&apos;s Darag?
+        </h3>
+        
+        <div className="flex flex-col md:flex-row items-start md:space-x-8 mt-12">
+        <div className="hidden md:block md:flex-1 mt-24">
             <Carousel
               showThumbs={false}
               infiniteLoop
@@ -399,24 +375,13 @@ const HomePage: FC = () => {
               showArrows
               swipeable={!isMobile}
             >
-              
-              <div>
-                <Image
-                  src="/images/Image2.jpg"
-                  alt="Darag Chicken Breeding"
-                  layout="responsive"
-                  width={800}
-                  height={400}
-                  className="rounded-lg shadow-lg object-cover"
-                />
-              </div>
               <div>
                 <Image
                   src="/images/Image3.jpg"
                   alt="Darag Chicken Preparation"
                   layout="responsive"
                   width={800}
-                  height={400}
+                  height={600}
                   className="rounded-lg shadow-lg object-cover"
                 />
               </div>
@@ -426,7 +391,7 @@ const HomePage: FC = () => {
                   alt="Abing's Darag Farm"
                   layout="responsive"
                   width={800}
-                  height={400}
+                  height={600}
                   className="rounded-lg shadow-lg object-cover"
                 />
               </div>
@@ -436,7 +401,7 @@ const HomePage: FC = () => {
                   alt="Abing's Darag Farm"
                   layout="responsive"
                   width={800}
-                  height={400}
+                  height={600}
                   className="rounded-lg shadow-lg object-cover"
                 />
               </div>
@@ -446,7 +411,7 @@ const HomePage: FC = () => {
                   alt="Abing's Darag Farm"
                   layout="responsive"
                   width={800}
-                  height={400}
+                  height={600}
                   className="rounded-lg shadow-lg object-cover"
                 />
               </div>
@@ -456,24 +421,92 @@ const HomePage: FC = () => {
                   alt="Abing's Darag Farm"
                   layout="responsive"
                   width={800}
-                  height={400}
-                  className="rounded-lg shadow-lg object-cover"
-                />
-              </div>
-              <div>
-                <Image
-                  src="/images/Image9.jpg"
-                  alt="Abing's Darag Farm"
-                  layout="responsive"
-                  width={800}
-                  height={400}
+                  height={600}
                   className="rounded-lg shadow-lg object-cover"
                 />
               </div>
             </Carousel>
           </div>
-  </div>
-</section>     
+        {/* Description Text */}
+        <div className="md:flex-1 text-justify">
+          <p className="text-base md:text-lg">
+            Abing&apos;s Darag might be small in size, but it carries immense significance. During the grand opening, high-ranking officials, business leaders, and faculty from West Visayas State University (WVSU) attended, not because of the store’s physical scale, but because of its symbolic importance. The event marked an essential step in establishing a regional trademark for Iloilo City—a brand deeply rooted in local culture and agricultural innovation. 
+            <br></br><br></br>
+            Abing&apos;s Darag was the perfect choice for this effort because of its commitment to promoting the native Darag chicken, a breed that is unique to Panay Island. The store’s ability to preserve tradition while promoting local sustainability made it an attractive platform for creating a distinct culinary identity for Iloilo City. Many of those present at the opening recognized this opportunity and wanted to be part of shaping the city’s cultural and economic landscape through this new culinary movement.
+          </p>
+          <br></br>
+          <p className="text-base md:text-lg">
+            Moreover, the store&apos;s manager, Ma'am Ladd Penaranda, played a crucial role in making the establishment a central figure in this larger effort. As a WVSU graduate and a respected entrepreneur, she has helped bring together the academic, agricultural, and business sectors to support the growth of the local economy through a focus on the Darag chicken. Abing’s Darag, despite its modest size, now stands at the forefront of this growing movement, paving the way for Iloilo City to be recognized as a culinary destination.
+          </p>
+        </div>
+
+        {/* Image Carousel */}
+        <div className="md:hidden md:flex-1 mt-6 sm:mt-24">
+                <Carousel
+                  showThumbs={false}
+                  infiniteLoop
+                  useKeyboardArrows={false}
+                  autoPlay
+                  dynamicHeight={false} // Prevent dynamic height adjustments
+                  showStatus={false}
+                  showIndicators
+                  showArrows
+                  swipeable={!isMobile}
+                >
+                  <div>
+                    <Image
+                      src="/images/Image3.jpg"
+                      alt="Darag Chicken Preparation"
+                      layout="responsive"
+                      width={800}
+                      height={600}
+                      className="rounded-lg shadow-lg object-cover"
+                    />
+                  </div>
+                  <div>
+                    <Image
+                      src="/images/Image4.jpg"
+                      alt="Abing's Darag Farm"
+                      layout="responsive"
+                      width={800}
+                      height={600}
+                      className="rounded-lg shadow-lg object-cover"
+                    />
+                  </div>
+                  <div>
+                    <Image
+                      src="/images/Image5.jpg"
+                      alt="Abing's Darag Farm"
+                      layout="responsive"
+                      width={800}
+                      height={600}
+                      className="rounded-lg shadow-lg object-cover"
+                    />
+                  </div>
+                  <div>
+                    <Image
+                      src="/images/Image6.jpg"
+                      alt="Abing's Darag Farm"
+                      layout="responsive"
+                      width={800}
+                      height={600}
+                      className="rounded-lg shadow-lg object-cover"
+                    />
+                  </div>
+                  <div>
+                    <Image
+                      src="/images/Image8.jpg"
+                      alt="Abing's Darag Farm"
+                      layout="responsive"
+                      width={800}
+                      height={600}
+                      className="rounded-lg shadow-lg object-cover"
+                    />
+                  </div>
+                </Carousel>
+              </div>
+      </div>
+    </section>     
 
       <SuppliersSection />
       <ContactSection />

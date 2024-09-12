@@ -1,19 +1,19 @@
 
 const suppliersData = [
-  { id: 1, location: "Province of Guimaras", image: "/images/location1.jpg" },
-  { id: 2, location: "Ajuy, Iloilo", image: "/images/location2.jpg" },
-  { id: 3, location: "New Lucena, Iloilo", image: "/images/suppliers/new-lucena.jpg" },
-  { id: 4, location: "Province of Capiz", image: "/images/suppliers/capiz.jpg" },
-  { id: 5, location: "San Joaquin", image: "/images/suppliers/san-joaquin.jpg" },
-  { id: 6, location: "Guimbal", image: "/images/suppliers/guimbal.jpg" },
+  { id: 1, location: "Province of Guimaras", image: "/images/guimaras.jpg" },
+  { id: 2, location: "Ajuy, Iloilo", image: "/images/location1.jpg" },
+  { id: 3, location: "New Lucena, Iloilo", image: "/images/lucena.jpg" },
+  { id: 4, location: "Province of Capiz", image: "/images/capiz.jpg" },
+  { id: 5, location: "San Joaquin", image: "/images/joaquin.jpg" },
+  { id: 6, location: "Guimbal", image: "/images/guimbal.jpg" },
 ];
 
 const SuppliersSection: React.FC = () => {
   return (
-    <section id="suppliers" className="p-4 md:p-8 text-black bg-gray-50">
+    <section id="suppliers" className="p-4 md:p-8 text-black bg-gray-50 mt-16">
       <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-center">Our Suppliers</h2>
-      <p className="text-base md:text-lg text-center mb-8">
-        Diri namon gina kuha ang amon nga mga manok
+      <p className="text-base md:text-lg text-center mb-16 mt-4">
+      We proudly source our Darag chickens from the esteemed members of the Panay Darag Breeders Association (PADABA)
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-6 lg:gap-8">
