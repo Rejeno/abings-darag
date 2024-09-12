@@ -206,7 +206,7 @@ const HomePage: FC = () => {
             {/* Image with description */}
             <figure className="mt-4 flex flex-col items-center">
               <Image
-                src="/images/Healthy.JPG"
+                src="/images/Healthy.jpg"
                 alt="Healthy Meal with Darag Chicken"
                 layout="responsive"
                 width={600}
