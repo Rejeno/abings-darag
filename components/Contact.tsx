@@ -9,9 +9,9 @@ const ContactSection: React.FC = () => {
     const zoom = 17;
 
     return (
-        <section id="contact" className="p-4 md:p-8 bg-gray-100 text-black pt-10">
-            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-center">Contact Us</h2>
-            <div className="max-w-6xl mx-auto p-4 bg-white rounded-lg shadow-lg">
+        <section id="contact" className="relative p-4 md:p-8 pt-10">
+            <div className="max-w-6xl mx-auto p-4 bg-gradient-to-br from-red-500 via-green-300 to-green-500 text-black rounded-lg shadow-lg">
+                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-center">Contact Us</h2>
                 <div className="flex flex-col md:flex-row">
                     {/* Contact Information */}
                     <div className="flex-1 p-4 md:pr-6 mb-6 md:mb-0">
@@ -31,7 +31,7 @@ const ContactSection: React.FC = () => {
                         <p className="flex items-center">
                             <FaFacebook className="mr-2 text-blue-600" />
                             <a href="https://www.facebook.com/YourPage" target="_blank" rel="noopener noreferrer" className="hover:underline">
-                            Abings Darag Chicken
+                                Abings Darag Chicken
                             </a>
                         </p>
                     </div>
@@ -39,7 +39,7 @@ const ContactSection: React.FC = () => {
                     {/* Map Section */}
                     <div className="flex-1 p-4 md:pl-6">
                         <h3 className="text-xl font-semibold mb-2">Our Location</h3>
-                        <div className="relative" style={{ height: '300px', zIndex: 0 }}>
+                        <div className="relative" style={{ height: '300px' }}>
                             <Map center={center} zoom={zoom} />
                         </div>
                     </div>

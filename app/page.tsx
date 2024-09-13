@@ -1,6 +1,8 @@
 'use client'
 
+import Benefits from '@/components/Benefits';
 import ContactSection from '@/components/Contact';
+import Gallery from '@/components/Gallery';
 import SuppliersSection from '@/components/Suppliers';
 import 'leaflet/dist/leaflet.css';
 import Image from 'next/image';
@@ -8,7 +10,6 @@ import { FC } from 'react';
 import { isMobile } from 'react-device-detect';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Gallery from '../components/Gallery';
 import './globals.css';
 
 
@@ -17,7 +18,7 @@ const HomePage: FC = () => {
     <>
       {/* Hero Section */}
       <section
-        className="relative min-h-screen flex items-center justify-center py-16 -mt-2 md:py-32 lg:py-52"
+        className="relative min-h-screen flex items-center justify-center py-16 -mt-6 sm:-mt-2 md:py-32 lg:py-52"
         style={{
           backgroundImage: 'url("/images/storee.jpg")',
           backgroundSize: 'cover', // Ensure it still covers the section
@@ -30,7 +31,7 @@ const HomePage: FC = () => {
 
         {/* Content */}
         <div className="container mx-auto text-center text-white relative z-10 px-4">
-          <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold leading-tight mb-4 -mt-12">
+          <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold leading-tight mb-4 -mt-10 sm:-mt-12">
             Discover the Pride of West Visayas
           </h1>
           <p className="mt-7 text-sm md:text-lg lg:text-3xl">
@@ -125,7 +126,7 @@ const HomePage: FC = () => {
           </div>
 
           {/* Image Carousel */}
-          <div className="md:flex-1 -mt-6 sm:mt-20 ">
+          <div className="md:flex-1 -mt-6 sm:mt-12 ">
             <Carousel
               showThumbs={false}
               infiniteLoop
@@ -163,114 +164,7 @@ const HomePage: FC = () => {
         </div>
       </section>
 
-      {/* Why Darag? */}
-      <section id="benefits" className="bg-gray-100 p-4 md:p-8 text-black mt-2 sm:pt-24">
-        <h2 className="text-2xl md:text-3xl lg:text-5xl font-semibold mb-20 text-center">Why Darag Chicken?</h2>
-
-        <div className="grid gap-6 md:gap-8 md:grid-cols-2 lg:grid-cols-3 mb-8">
-
-          {/* Superior Taste */}
-          <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl hover:bg-red-50">
-            <div className="flex items-center mb-4">
-              <svg className="w-6 h-6 md:w-8 md:h-8 text-red-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"></path>
-              </svg>
-              <h3 className="text-lg md:text-xl font-semibold">Superior Taste</h3>
-            </div>
-            <p className="text-sm md:text-base text-justify">
-              Darag chicken offers a rich and unique flavor profile that stands out from other breeds. Its savory meat and distinct eating experience are claimed to be better than commercial chicken meat. The slower growth of Darag chickens also leads to a richer taste, with less gamy flavor often associated with native and wild meats.
-            </p>
-            {/* Image with description */}
-            <figure className="mt-4 flex flex-col items-center">
-              <Image
-                src="/images/Taste.jpg"
-                alt="Delicious Darag Chicken Dish"
-                layout="responsive"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg object-cover"
-              />
-            </figure>
-          </div>
-
-          {/* Health Benefits */}
-          <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl hover:bg-red-50">
-            <div className="flex items-center mb-4">
-              <svg className="w-6 h-6 md:w-8 md:h-8 text-red-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"></path>
-              </svg>
-              <h3 className="text-lg md:text-xl font-semibold">Health Benefits</h3>
-            </div>
-            <p className="text-sm md:text-base text-justify">
-              Packed with essential nutrients and lower in fat, Darag chicken is a healthier choice. Darag chicken&apos;s natural diet and organic dietary provide plenty of health benefits. Compared to broiler chickens, these chickens are usually leaner, have less fat, and have higher protein content. They&apos;sre also healthy since they&apos;re full of vitamins and other important nutrients.
-            </p>
-            {/* Image with description */}
-            <figure className="mt-4 flex flex-col items-center">
-              <Image
-                src="/images/Healthy.jpg"
-                alt="Healthy Meal with Darag Chicken"
-                layout="responsive"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg object-cover"
-              />
-            </figure>
-          </div>
-
-          {/* Sustainable Farming */}
-          <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl hover:bg-red-50">
-            <div className="flex items-center mb-4">
-              <svg className="w-6 h-6 md:w-8 md:h-8 text-red-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"></path>
-              </svg>
-              <h3 className="text-lg md:text-xl font-semibold">Sustainable Farming</h3>
-            </div>
-            <p className="text-sm md:text-base text-justify">
-              Darag chicken farming has a lower environmental impact, making it a sustainable choice. Organic materials like natural feeds and organic supplements contribute to the chicken&apos;s better nutritional profile, and it also minimizes the environmental impact by reducing reliance on synthetic products in farming.
-            </p>
-            {/* Image with description */}
-            <figure className="mt-4 flex flex-col items-center">
-              <Image
-                src="/images/sustainable2.jpg"
-                alt="Sustainable Chicken Farming"
-                layout="responsive"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg object-cover"
-              />
-              <figcaption className="text-xs text-gray-400 mt-2 opacity-75 text-center">
-                PHOTO COURTESY OF DOST
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-
-        <div className="flex flex-col sm:flex-row justify-center mt-12 items-center sm:items-start space-y-6 sm:space-y-0 sm:space-x-2">
-          {/* YouTube Video on the Left */}
-          <div className="flex flex-col sm:flex-row justify-center items-center sm:items-start mt-12 space-y-6 sm:space-y-0 sm:space-x-6">
-
-            {/* left Side Text */}
-            <div className="w-full sm:w-1/3 px-4 sm:px-8 -pl-4">
-              <p className="text-gray-700 text-justify mb-4 -mt-12 sm:mt-10">
-                Darag chicken is a native breed that offers richer flavor and better nutritional value compared to broiler chickens. Raised organically, they benefit from a natural diet, resulting in meat that is not only healthier but also more flavorful. This traditional breed has been cherished for its unique taste and superior quality for generations. Discover more about its remarkable qualities and benefits by checking out the video!
-              </p>
-            </div>
-            {/* YouTube Video on the right */}
-            <div className="w-full sm:w-2/3">
-              <iframe
-                width="100%"
-                height="auto"
-                src="https://www.youtube.com/embed/x3JsMkvMFPg?si=yfMLs9KFlykSMPp3"
-                title="Darag Chicken Benefits Video"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="rounded-lg shadow-lg h-[250px] sm:h-[350px]"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <Benefits/>
 
 
       {/* Success Story with Carousel */}
@@ -290,16 +184,12 @@ const HomePage: FC = () => {
 
               <br></br><br></br>
 
-              During Martial Law, a group of Filipino scientists and researchers was sent abroad to gather knowledge and expertise to
-              improve the Philippine livestock industry. It was in the farmlands of Tokyo where Dr. Bernabe Cocjin first encountered the
-              Hinai-dori, Japan&apos;s native chicken. This moment sparked an inspiration in the young researcher from Panay, igniting a vision
-              that would revolutionize the local poultry industry. After 20 years and eight generations of careful breeding and purification,
-              the study of the Darag chicken was perfected.
+              During Martial Law, a group of Filipino scientists and researchers was sent abroad to gather knowledge and expertise to improve the Philippine livestock industry. It was in the farmlands of Tokyo where Dr. Bernabe Cocjin first encountered the Hinai-dori, Japan&apos;s native chicken. This moment sparked an inspiration in the young researcher from Panay, igniting a vision that would revolutionize the local poultry industry. &quot;The unique characteristics of the Hinai-dori, coupled with Dr. Cocjin&apos;s innovative approach, laid the foundation for a groundbreaking endeavor in poultry breeding.&quot; After 20 years and eight generations of careful breeding and purification, the study of the Darag chicken was perfected.
             </p>
           </div>
 
             {/* Image Carousel on the Right */}
-            <div className="md:w-1/2 mt-8 md:mt-0">
+            <div className="md:w-1/2 mt-8 md:mt-2">
               <Carousel
                 showThumbs={false}
                 infiniteLoop
@@ -346,11 +236,13 @@ const HomePage: FC = () => {
           </div>
 
           {/* Remaining Paragraphs Under the Carousel */}
-          <div className="mt-6 text-justify">
+          <div className="mt-6 sm:mt-3 text-justify">
             <p className="text-base md:text-lg mb-24">
             Dr. Cocjin&apos;s dream was to make Abing&apos;s Darag not just a household name, but a destination—a place where visitors could savor the unique flavors of Darag chicken dishes. Today, Abing&apos;s Darag stands as a testament to Filipino innovation, offering a taste of tradition perfected over decades. The brand stands as a symbol of dedication to quality and local tradition. Abing&apos;s Darag dishes stick to traditional Filipino favorites such as Adobong manok, Tinola, Lechon, and Tinuom. These dishes not only showcase the culinary heritage of the Philippines but also highlight the importance of supporting locally sourced ingredients. Abing&apos;s Darag continues to evolve while staying true to its roots, blending innovation with the preservation of cultural identity.
             </p>
+
             <Gallery/>
+
           </div>
         </section>
 
