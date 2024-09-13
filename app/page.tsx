@@ -324,7 +324,7 @@ const HomePage: FC = () => {
             >
               <div>
                 <Image
-                  src="/images/store.jpg"
+                  src="/images/store2.jpg"
                   alt="Darag Chicken Breeding"
                   layout="responsive"
                   width={800}
@@ -334,7 +334,7 @@ const HomePage: FC = () => {
               </div>
               <div>
                 <Image
-                  src="/images/store2.jpg"
+                  src="/images/image2.jpg"
                   alt="Darag Chicken Preparation"
                   layout="responsive"
                   width={800}
@@ -375,6 +375,16 @@ const HomePage: FC = () => {
               showArrows
               swipeable={!isMobile}
             >
+              <div>
+                <Image
+                  src="/images/Image10.jpg"
+                  alt="Abing's Darag Farm"
+                  layout="responsive"
+                  width={800}
+                  height={600}
+                  className="rounded-lg shadow-lg object-cover"
+                />
+              </div>
               <div>
                 <Image
                   src="/images/Image3.jpg"
@@ -425,6 +435,7 @@ const HomePage: FC = () => {
                   className="rounded-lg shadow-lg object-cover"
                 />
               </div>
+              
             </Carousel>
           </div>
         {/* Description Text */}
@@ -439,72 +450,6 @@ const HomePage: FC = () => {
             Moreover, the store&apos;s manager, Ma&apos;am Ladd Penaranda, played a crucial role in making the establishment a central figure in this larger effort. As a WVSU graduate and a respected entrepreneur, she has helped bring together the academic, agricultural, and business sectors to support the growth of the local economy through a focus on the Darag chicken. Abing’s Darag, despite its modest size, now stands at the forefront of this growing movement, paving the way for Iloilo City to be recognized as a culinary destination.
           </p>
         </div>
-
-        {/* Image Carousel */}
-        <div className="md:hidden md:flex-1 mt-6 sm:mt-24">
-                <Carousel
-                  showThumbs={false}
-                  infiniteLoop
-                  useKeyboardArrows={false}
-                  autoPlay
-                  dynamicHeight={false} // Prevent dynamic height adjustments
-                  showStatus={false}
-                  showIndicators
-                  showArrows
-                  swipeable={!isMobile}
-                >
-                  <div>
-                    <Image
-                      src="/images/Image3.jpg"
-                      alt="Darag Chicken Preparation"
-                      layout="responsive"
-                      width={800}
-                      height={600}
-                      className="rounded-lg shadow-lg object-cover"
-                    />
-                  </div>
-                  <div>
-                    <Image
-                      src="/images/Image4.jpg"
-                      alt="Abing's Darag Farm"
-                      layout="responsive"
-                      width={800}
-                      height={600}
-                      className="rounded-lg shadow-lg object-cover"
-                    />
-                  </div>
-                  <div>
-                    <Image
-                      src="/images/Image5.jpg"
-                      alt="Abing's Darag Farm"
-                      layout="responsive"
-                      width={800}
-                      height={600}
-                      className="rounded-lg shadow-lg object-cover"
-                    />
-                  </div>
-                  <div>
-                    <Image
-                      src="/images/Image6.jpg"
-                      alt="Abing's Darag Farm"
-                      layout="responsive"
-                      width={800}
-                      height={600}
-                      className="rounded-lg shadow-lg object-cover"
-                    />
-                  </div>
-                  <div>
-                    <Image
-                      src="/images/Image8.jpg"
-                      alt="Abing's Darag Farm"
-                      layout="responsive"
-                      width={800}
-                      height={600}
-                      className="rounded-lg shadow-lg object-cover"
-                    />
-                  </div>
-                </Carousel>
-              </div>
       </div>
     </section>     
 
