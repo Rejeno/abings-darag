@@ -305,8 +305,10 @@ const HomePage: FC = () => {
             </p>
             <br></br>
             <p className="text-base md:text-lg">
-              The brand stands as a symbol of dedication to quality and local tradition. Abings Darag dishes sticks to the traditional
-              dishes here in the Philippines like Adobong manok, Tinola, Lechon, and Tinuom.
+            The brand stands as a symbol of dedication to quality and local tradition. 
+            Abing&apos;s Darag offers a wide range of dishes, focusing on traditional Filipino favorites. 
+            While chicken dishes like Adobong Manok, Tinola, Tinuom, and Fried Chicken are highlights, the menu is not limited to chicken alone. 
+            It also features pork and beef options, such as Pork Lumpia, Pork Adobo, Pork Barbeque and many other beloved Filipino dishes.
             </p>
           </div>
 
@@ -442,7 +444,6 @@ const HomePage: FC = () => {
               
             </Carousel>
           </div>
-<<<<<<< HEAD
           {/* Description Text */}
           <div className="md:flex-1 text-justify">
             <p className="text-base md:text-lg">
@@ -523,22 +524,6 @@ const HomePage: FC = () => {
           </div>
         </div>
       </section>
-=======
-        {/* Description Text */}
-        <div className="md:flex-1 text-justify">
-          <p className="text-base md:text-lg">
-            Abing&apos;s Darag might be small in size, but it carries immense significance. During the grand opening, high-ranking officials, business leaders, and faculty from West Visayas State University (WVSU) attended, not because of the store’s physical scale, but because of its symbolic importance. The event marked an essential step in establishing a regional trademark for Iloilo City—a brand deeply rooted in local culture and agricultural innovation. 
-            <br></br><br></br>
-            Abing&apos;s Darag was the perfect choice for this effort because of its commitment to promoting the native Darag chicken, a breed that is unique to Panay Island. The store’s ability to preserve tradition while promoting local sustainability made it an attractive platform for creating a distinct culinary identity for Iloilo City. Many of those present at the opening recognized this opportunity and wanted to be part of shaping the city’s cultural and economic landscape through this new culinary movement.
-          </p>
-          <br></br>
-          <p className="text-base md:text-lg">
-            Moreover, the store&apos;s manager, Ma&apos;am Ladd Penaranda, played a crucial role in making the establishment a central figure in this larger effort. As a WVSU graduate and a respected entrepreneur, she has helped bring together the academic, agricultural, and business sectors to support the growth of the local economy through a focus on the Darag chicken. Abing’s Darag, despite its modest size, now stands at the forefront of this growing movement, paving the way for Iloilo City to be recognized as a culinary destination.
-          </p>
-        </div>
-      </div>
-    </section>     
->>>>>>> de67e075e7d7b62d0eff8379641a817c76ac1f69
 
       <SuppliersSection />
       <ContactSection />
