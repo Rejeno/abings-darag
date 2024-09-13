@@ -16,11 +16,11 @@ const HomePage: FC = () => {
     <>
       {/* Hero Section */}
       <section
-        className="relative min-h-screen flex items-center justify-center py-16 -mt-6 md:py-32 lg:py-52"
+        className="relative min-h-screen flex items-center justify-center py-16 -mt-2 md:py-32 lg:py-52"
         style={{
-          backgroundImage: 'url("/images/store.jpg")',
+          backgroundImage: 'url("/images/storee.jpg")',
           backgroundSize: 'cover', // Ensure it still covers the section
-          backgroundPosition: 'top', // Default position for larger screens
+          backgroundPosition: 'bottom', // Default position for larger screens
           backgroundRepeat: 'no-repeat',
         }}
       >
