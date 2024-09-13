@@ -470,6 +470,16 @@ const HomePage: FC = () => {
               showArrows
               swipeable={!isMobile}
             >
+               <div>
+                <Image
+                  src="/images/Image10.jpg"
+                  alt="Abing's Darag Farm"
+                  layout="responsive"
+                  width={800}
+                  height={600}
+                  className="rounded-lg shadow-lg object-cover"
+                />
+              </div>
               <div>
                 <Image
                   src="/images/Image3.jpg"
