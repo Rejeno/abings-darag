@@ -46,7 +46,7 @@ const Benefits = () => {
                             <h3 className="text-lg md:text-xl font-semibold text-black">Health Benefits</h3>
                         </div>
                         <p className="text-sm md:text-base text-black text-justify">
-                            Packed with essential nutrients and lower in fat, Darag chicken is a healthier choice. Darag chicken's natural diet and organic dietary provide plenty of health benefits. Compared to broiler chickens, these chickens are usually leaner, have less fat, and have higher protein content. They’re also healthy since they’re full of vitamins and other important nutrients.
+                            Packed with essential nutrients and lower in fat, Darag chicken is a healthier choice. Darag chicken&apos;s natural diet and organic dietary provide plenty of health benefits. Compared to broiler chickens, these chickens are usually leaner, have less fat, and have higher protein content. They&apos;re also healthy since they&apos;re full of vitamins and other important nutrients.
                         </p>
                         {/* Image with description */}
                         <figure className="mt-4 flex flex-col items-center">
@@ -73,7 +73,7 @@ const Benefits = () => {
                             <h3 className="text-lg md:text-xl font-semibold text-black">Sustainable Farming</h3>
                         </div>
                         <p className="text-sm md:text-base text-black text-justify">
-                            Darag chicken farming has a lower environmental impact, making it a sustainable choice. Organic materials like natural feeds and organic supplements contribute to the chicken's better nutritional profile, and it also minimizes the environmental impact by reducing reliance on synthetic products in farming.
+                            Darag chicken farming has a lower environmental impact, making it a sustainable choice. Organic materials like natural feeds and organic supplements contribute to the chicken&apos;s better nutritional profile, and it also minimizes the environmental impact by reducing reliance on synthetic products in farming.
                         </p>
                         {/* Image with description */}
                         <figure className="mt-4 flex flex-col items-center">
