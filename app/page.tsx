@@ -8,8 +8,8 @@ import { FC } from 'react';
 import { isMobile } from 'react-device-detect';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import './globals.css';
 import Gallery from '../components/Gallery';
+import './globals.css';
 
 
 const HomePage: FC = () => {
@@ -274,278 +274,155 @@ const HomePage: FC = () => {
 
 
       {/* Success Story with Carousel */}
-      <section id="story" className="p-4 md:p-8 text-black mt-10 mb-16">
-        <h2 className="text-2xl md:text-5xl font-bold mb-16 text-center mt-12">
-          What is Abing&apos;s Darag Chicken Trading?
-        </h2>
-        <div className="flex flex-col md:flex-row items-start md:space-x-8">
-          {/* Story Text */}
-          <div className="md:flex-1 text-justify">
-            <p className="text-base md:text-lg">
+        <section id="story" className="p-4 md:p-8 text-black mt-10 mb-16">
+          <h2 className="text-2xl md:text-5xl font-bold mb-16 text-center mt-12">
+            What is Abing&apos;s Darag Chicken Trading?
+          </h2>
 
+          {/* Main Flex Container for Text and Carousel */}
+          <div className="flex flex-col md:flex-row items-start md:space-x-8">
+            {/* Story Text (First Two Paragraphs on Left) */}
+            <div className="md:w-1/2 text-justify">
+              <p className="text-base md:text-lg">
+                What began as a small &quot;karinderia&quot; has grown into a leading business,
+                renowned for studying and trading the native Darag chicken. The journey started at West Visayas State University,
+                where Ma&apos;am Ladd recognized the potential for a startup focused on Darag chicken, a breed unique to the Philippines.
+              </p>
+              <br />
+              <p className="text-base md:text-lg">
+                During Martial Law, a group of Filipino scientists and researchers was sent abroad to gather knowledge and expertise to
+                improve the Philippine livestock industry. It was in the farmlands of Tokyo where Dr. Bernabe Cocjin first encountered the
+                Hinai-dori, Japan&apos;s native chicken. This moment sparked an inspiration in the young researcher from Panay, igniting a vision
+                that would revolutionize the local poultry industry. After 20 years and eight generations of careful breeding and purification,
+                the study of the Darag chicken was perfected.
+              </p>
+            </div>
 
-              What began as a small &quot;karinderia&quot; has grown into a leading business,
-              renowned for studying and trading the native Darag chicken. The journey started at West Visayas State University,
-              where Ma&apos;am Ladd recognized the potential for a startup focused on Darag chicken, a breed unique to the Philippines.
+            {/* Image Carousel on the Right */}
+            <div className="md:w-1/2 mt-8 md:mt-0">
+              <Carousel
+                showThumbs={false}
+                infiniteLoop
+                useKeyboardArrows={false}
+                autoPlay
+                dynamicHeight={false}
+                showStatus={false}
+                showIndicators
+                showArrows
+                swipeable={!isMobile}
+              >
+                <div>
+                  <Image
+                    src="/images/store.jpg"
+                    alt="Darag Chicken Breeding"
+                    layout="responsive"
+                    width={800}
+                    height={600}
+                    className="rounded-lg shadow-lg object-cover"
+                  />
+                </div>
+                <div>
+                  <Image
+                    src="/images/store2.jpg"
+                    alt="Darag Chicken Preparation"
+                    layout="responsive"
+                    width={800}
+                    height={600}
+                    className="rounded-lg shadow-lg object-cover"
+                  />
+                </div>
+                <div>
+                  <Image
+                    src="/images/darag2.jpg"
+                    alt="Abing's Darag Farm"
+                    layout="responsive"
+                    width={800}
+                    height={600}
+                    className="rounded-lg shadow-lg object-cover"
+                  />
+                </div>
+              </Carousel>
+            </div>
+          </div>
 
-              <br></br><br></br>
-
-              During Martial Law, a group of Filipino scientists and researchers was sent abroad to gather knowledge and expertise to
-              improve the Philippine livestock industry. It was in the farmlands of Tokyo where Dr. Bernabe Cocjin first encountered the
-              Hinai-dori, Japan&apos;s native chicken. This moment sparked an inspiration in the young researcher from Panay, igniting a vision
-              that would revolutionize the local poultry industry. After 20 years and eight generations of careful breeding and purification,
-              the study of the Darag chicken was perfected.
-
-
-              <br></br><br></br>
-              Dr. Cocjin&apos;s dream was to make Abing&apos;s Darag not just a household name, but a destination—a place where visitors could savor
-              the unique flavors of Darag chicken dishes. Today, Abing&apos;s Darag stands as a testament to Filipino innovation, offering a taste
-              of tradition perfected over decades.
-
+          {/* Remaining Paragraphs Under the Carousel */}
+          <div className="mt-6 text-justify">
+            <p className="text-base md:text-lg mb-24">
+            Dr. Cocjin&apos;s dream was to make Abing&apos;s Darag not just a household name, but a destination—a place where visitors could savor the unique flavors of Darag chicken dishes. Today, Abing&apos;s Darag stands as a testament to Filipino innovation, offering a taste of tradition perfected over decades. The brand stands as a symbol of dedication to quality and local tradition. Abing&apos;s Darag dishes stick to traditional Filipino favorites such as Adobong manok, Tinola, Lechon, and Tinuom. These dishes not only showcase the culinary heritage of the Philippines but also highlight the importance of supporting locally sourced ingredients. Abing&apos;s Darag continues to evolve while staying true to its roots, blending innovation with the preservation of cultural identity.
             </p>
-            <br></br>
-            <p className="text-base md:text-lg">
-              The brand stands as a symbol of dedication to quality and local tradition. Abings Darag dishes sticks to the traditional
-              dishes here in the Philippines like Adobong manok, Tinola, Lechon, and Tinuom.
-            </p>
+            <Gallery/>
           </div>
+        </section>
 
-          {/* Image Carousel */}
-          <div className="md:flex-1 mt-8 sm:mt-24 ">
-            <Carousel
-              showThumbs={false}
-              infiniteLoop
-              useKeyboardArrows={false}
-              autoPlay
-              dynamicHeight={false} // Prevent dynamic height adjustments
-              showStatus={false}
-              showIndicators
-              showArrows
-              swipeable={!isMobile}
-            >
-              <div>
-                <Image
-                  src="/images/store2.jpg"
-                  alt="Darag Chicken Breeding"
-                  layout="responsive"
-                  width={800}
-                  height={600}
-                  className="rounded-lg shadow-lg object-cover"
-                />
-              </div>
-              <div>
-                <Image
-                  src="/images/image2.jpg"
-                  alt="Darag Chicken Preparation"
-                  layout="responsive"
-                  width={800}
-                  height={600}
-                  className="rounded-lg shadow-lg object-cover"
-                />
-              </div>
-              <div>
-                <Image
-                  src="/images/darag2.jpg"
-                  alt="Abing's Darag Farm"
-                  layout="responsive"
-                  width={800}
-                  height={600}
-                  className="rounded-lg shadow-lg object-cover"
-                />
-              </div>
-            </Carousel>
-          </div>
+
+      {/* Who's Behind Abing's Darag Chicken Trading */}
+<section id="behindAbingsDarag" className="p-4 md:p-8 text-black mt-10">
+  <h3 className="text-2xl md:text-5xl font-bold mb-16 text-center">
+    Who&apos;s Behind Abing&apos;s Darag Chicken Trading?
+  </h3>
+
+  <div className="flex flex-col md:flex-row items-start md:space-x-8 mt-12 mb-4">
+    {/* Description Text */}
+    <div className="md:w-1/2 text-justify">
+      <p className="text-base md:text-lg">
+        Abing&apos;s Darag might be small in size, but it carries immense significance. During the grand opening, high-ranking officials, business leaders, and faculty from West Visayas State University (WVSU) attended, not because of the store’s physical scale, but because of its symbolic importance. The event marked an essential step in establishing a regional trademark for Iloilo City—a brand deeply rooted in local culture and agricultural innovation.
+        <br /><br />
+        Abing&apos;s Darag was the perfect choice for this effort because of its commitment to promoting the native Darag chicken, a breed that is unique to Panay Island. The store’s ability to preserve tradition while promoting local sustainability made it an attractive platform for creating a distinct culinary identity for Iloilo City. By supporting local farmers and embracing eco-friendly practices, Abing's Darag not only uplifts the community but also paves the way for future innovations in sustainable food production.
+      </p>
+    </div>
+
+    {/* Image Carousel */}
+    <div className="md:w-1/2 mt-8 sm:mt-2 mb-6">
+      <Carousel
+        showThumbs={false}
+        infiniteLoop
+        useKeyboardArrows={false}
+        autoPlay
+        dynamicHeight={false}
+        showStatus={false}
+        showIndicators
+        showArrows
+        swipeable={!isMobile}
+      >
+        <div>
+          <Image
+            src="/images/Image3.jpg"
+            alt="Darag Chicken Preparation"
+            layout="responsive"
+            width={800}
+            height={600}
+            className="rounded-lg shadow-lg object-cover"
+          />
         </div>
-        <div className="mt-10">
-          <Gallery />
+        <div>
+          <Image
+            src="/images/Image4.jpg"
+            alt="Abing's Darag Farm"
+            layout="responsive"
+            width={800}
+            height={600}
+            className="rounded-lg shadow-lg object-cover"
+          />
         </div>
-      </section>
+        {/* Add more images as needed */}
+      </Carousel>
+    </div>
+  </div>
 
-      <section id="behindAbingsDarag" className="p-4 md:p-8 text-black mt-10">
-        <h3 className="text-2xl md:text-5xl font-bold mb-16 text-center">
-          Who&apos;s Behind Abing&apos;s Darag Chicken Trading?
-        </h3>
-
-        <div className="flex flex-col md:flex-row items-start md:space-x-8 mt-12">
-          <div className="hidden md:block md:flex-1 mt-24">
-            <Carousel
-              showThumbs={false}
-              infiniteLoop
-              useKeyboardArrows={false}
-              autoPlay
-              dynamicHeight={false} // Prevent dynamic height adjustments
-              showStatus={false}
-              showIndicators
-              showArrows
-              swipeable={!isMobile}
-            >
-              <div>
-                <Image
-                  src="/images/Image10.jpg"
-                  alt="Abing's Darag Farm"
-                  layout="responsive"
-                  width={800}
-                  height={600}
-                  className="rounded-lg shadow-lg object-cover"
-                />
-              </div>
-              <div>
-                <Image
-                  src="/images/Image3.jpg"
-                  alt="Darag Chicken Preparation"
-                  layout="responsive"
-                  width={800}
-                  height={600}
-                  className="rounded-lg shadow-lg object-cover"
-                />
-              </div>
-              <div>
-                <Image
-                  src="/images/Image4.jpg"
-                  alt="Abing's Darag Farm"
-                  layout="responsive"
-                  width={800}
-                  height={600}
-                  className="rounded-lg shadow-lg object-cover"
-                />
-              </div>
-              <div>
-                <Image
-                  src="/images/Image5.jpg"
-                  alt="Abing's Darag Farm"
-                  layout="responsive"
-                  width={800}
-                  height={600}
-                  className="rounded-lg shadow-lg object-cover"
-                />
-              </div>
-              <div>
-                <Image
-                  src="/images/Image6.jpg"
-                  alt="Abing's Darag Farm"
-                  layout="responsive"
-                  width={800}
-                  height={600}
-                  className="rounded-lg shadow-lg object-cover"
-                />
-              </div>
-              <div>
-                <Image
-                  src="/images/Image8.jpg"
-                  alt="Abing's Darag Farm"
-                  layout="responsive"
-                  width={800}
-                  height={600}
-                  className="rounded-lg shadow-lg object-cover"
-                />
-              </div>
-              
-            </Carousel>
-          </div>
-<<<<<<< HEAD
-          {/* Description Text */}
-          <div className="md:flex-1 text-justify">
-            <p className="text-base md:text-lg">
-              Abing&apos;s Darag might be small in size, but it carries immense significance. During the grand opening, high-ranking officials, business leaders, and faculty from West Visayas State University (WVSU) attended, not because of the store’s physical scale, but because of its symbolic importance. The event marked an essential step in establishing a regional trademark for Iloilo City—a brand deeply rooted in local culture and agricultural innovation.
-              <br></br><br></br>
-              Abing&apos;s Darag was the perfect choice for this effort because of its commitment to promoting the native Darag chicken, a breed that is unique to Panay Island. The store’s ability to preserve tradition while promoting local sustainability made it an attractive platform for creating a distinct culinary identity for Iloilo City. Many of those present at the opening recognized this opportunity and wanted to be part of shaping the city’s cultural and economic landscape through this new culinary movement.
-            </p>
-            <br></br>
-            <p className="text-base md:text-lg">
-              Moreover, the store&apos;s manager, Ma&apos;am Ladd Penaranda, played a crucial role in making the establishment a central figure in this larger effort. As a WVSU graduate and a respected entrepreneur, she has helped bring together the academic, agricultural, and business sectors to support the growth of the local economy through a focus on the Darag chicken. Abing’s Darag, despite its modest size, now stands at the forefront of this growing movement, paving the way for Iloilo City to be recognized as a culinary destination.
-            </p>
-          </div>
-
-          {/* Image Carousel */}
-          <div className="md:hidden md:flex-1 mt-6 sm:mt-24">
-            <Carousel
-              showThumbs={false}
-              infiniteLoop
-              useKeyboardArrows={false}
-              autoPlay
-              dynamicHeight={false} // Prevent dynamic height adjustments
-              showStatus={false}
-              showIndicators
-              showArrows
-              swipeable={!isMobile}
-            >
-              <div>
-                <Image
-                  src="/images/Image3.jpg"
-                  alt="Darag Chicken Preparation"
-                  layout="responsive"
-                  width={800}
-                  height={600}
-                  className="rounded-lg shadow-lg object-cover"
-                />
-              </div>
-              <div>
-                <Image
-                  src="/images/Image4.jpg"
-                  alt="Abing's Darag Farm"
-                  layout="responsive"
-                  width={800}
-                  height={600}
-                  className="rounded-lg shadow-lg object-cover"
-                />
-              </div>
-              <div>
-                <Image
-                  src="/images/Image5.jpg"
-                  alt="Abing's Darag Farm"
-                  layout="responsive"
-                  width={800}
-                  height={600}
-                  className="rounded-lg shadow-lg object-cover"
-                />
-              </div>
-              <div>
-                <Image
-                  src="/images/Image6.jpg"
-                  alt="Abing's Darag Farm"
-                  layout="responsive"
-                  width={800}
-                  height={600}
-                  className="rounded-lg shadow-lg object-cover"
-                />
-              </div>
-              <div>
-                <Image
-                  src="/images/Image8.jpg"
-                  alt="Abing's Darag Farm"
-                  layout="responsive"
-                  width={800}
-                  height={600}
-                  className="rounded-lg shadow-lg object-cover"
-                />
-              </div>
-            </Carousel>
-          </div>
-        </div>
-      </section>
-=======
-        {/* Description Text */}
-        <div className="md:flex-1 text-justify">
-          <p className="text-base md:text-lg">
-            Abing&apos;s Darag might be small in size, but it carries immense significance. During the grand opening, high-ranking officials, business leaders, and faculty from West Visayas State University (WVSU) attended, not because of the store’s physical scale, but because of its symbolic importance. The event marked an essential step in establishing a regional trademark for Iloilo City—a brand deeply rooted in local culture and agricultural innovation. 
-            <br></br><br></br>
-            Abing&apos;s Darag was the perfect choice for this effort because of its commitment to promoting the native Darag chicken, a breed that is unique to Panay Island. The store’s ability to preserve tradition while promoting local sustainability made it an attractive platform for creating a distinct culinary identity for Iloilo City. Many of those present at the opening recognized this opportunity and wanted to be part of shaping the city’s cultural and economic landscape through this new culinary movement.
-          </p>
-          <br></br>
-          <p className="text-base md:text-lg">
-            Moreover, the store&apos;s manager, Ma&apos;am Ladd Penaranda, played a crucial role in making the establishment a central figure in this larger effort. As a WVSU graduate and a respected entrepreneur, she has helped bring together the academic, agricultural, and business sectors to support the growth of the local economy through a focus on the Darag chicken. Abing’s Darag, despite its modest size, now stands at the forefront of this growing movement, paving the way for Iloilo City to be recognized as a culinary destination.
-          </p>
-        </div>
-      </div>
-    </section>     
->>>>>>> de67e075e7d7b62d0eff8379641a817c76ac1f69
-
-      <SuppliersSection />
-      <ContactSection />
+  {/* Remaining Text */}
+  <div className="mt-4">
+    <p className="text-base md:text-lg text-justify">
+      Moreover, the store&apos;s manager, Ma&apos;am Ladd Penaranda, played a crucial role in making the establishment a central figure in this larger effort. As a WVSU graduate and a respected entrepreneur, she has helped bring together the academic, agricultural, and business sectors to support the growth of the local economy through a focus on the Darag chicken. Her leadership has not only solidified the brand&apos;s presence but has also inspired other local businesses to follow a similar path of innovation and sustainability. Abing&apos;s Darag, despite its modest size, now stands at the forefront of this growing movement, paving the way for Iloilo City to be recognized as a culinary destination, while also fostering a deep sense of pride in local culture.
+    </p>
+  </div>
+</section>
 
 
-    </>
-  );
+
+    <SuppliersSection />
+    <ContactSection />
+  </>
+);
 };
 
 export default HomePage;
