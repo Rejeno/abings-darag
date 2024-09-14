@@ -70,3 +70,8 @@ html {
 .my-map-class {
   height: 400px;
 }
+
+.navbar {
+  z-index: 1000;
+  position: relative; /* or fixed if necessary */
+}

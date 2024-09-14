@@ -203,7 +203,7 @@ const HomePage: FC = () => {
             >
               <div>
                 <Image
-                  src="/images/store.jpg"
+                  src="/images/IMG_5081.jpg"
                   alt="Darag Chicken Breeding"
                   layout="responsive"
                   width={800}
@@ -296,13 +296,33 @@ const HomePage: FC = () => {
                   className="rounded-lg shadow-lg object-cover"
                 />
               </div>
+              <div>
+                <Image
+                  src="/images/DA.jpg"
+                  alt="Abing's Darag Farm"
+                  layout="responsive"
+                  width={800}
+                  height={600}
+                  className="rounded-lg shadow-lg object-cover"
+                />
+              </div>
+              <div>
+                <Image
+                  src="/images/IMG_5074.jpg"
+                  alt="Abing's Darag Farm"
+                  layout="responsive"
+                  width={800}
+                  height={600}
+                  className="rounded-lg shadow-lg object-cover"
+                />
+              </div>
               {/* Add more images as needed */}
             </Carousel>
           </div>
         </div>
 
         {/* Remaining Text */}
-        <div className="mt-4">
+        <div className="mt-2">
           <p className="text-base md:text-lg text-justify">
             Moreover, the store&apos;s manager, Ma&apos;am Ladd Penaranda, played a crucial role in making the establishment a central figure in this larger effort. As a WVSU graduate and a respected entrepreneur, she has helped bring together the academic, agricultural, and business sectors to support the growth of the local economy through a focus on the Darag chicken. Her leadership has not only solidified the brand&apos;s presence but has also inspired other local businesses to follow a similar path of innovation and sustainability. Abing&apos;s Darag, despite its modest size, now stands at the forefront of this growing movement, paving the way for Iloilo City to be recognized as a culinary destination, while also fostering a deep sense of pride in local culture.
           </p>

@@ -7,27 +7,30 @@ const suppliersData = [
 const SuppliersSection: React.FC = () => {
   return (
     <section id="suppliers" className="relative p-4 md:p-8 text-black bg-gray-50 mt-16 mb-2">
-      <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-center">Our Suppliers</h2>
-      <p className="text-base md:text-lg text-center mb-16 mt-4">
-        We proudly source our Darag chickens from the esteemed members of the Panay Darag Chicken Breeders Association (PADABA)
-      </p>
-
       {/* Gradient Background Container */}
       <div className="absolute inset-0 bg-gradient-to-br from-red-500 via-transparent to-green-500 opacity-30 z-0"></div>
 
-      <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-6 lg:gap-8">
-        {suppliersData.map((supplier) => (
-          <div
-            key={supplier.id}
-            className="relative bg-gray-300 rounded-lg shadow-lg overflow-hidden h-48 sm:h-56 md:h-64 text-center transition-transform duration-500 ease-in-out transform hover:scale-105 hover:shadow-2xl"
-            style={{
-              backgroundImage: `url(${supplier.image})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-          </div>
-        ))}
+      {/* Main Content */}
+      <div className="relative z-10">
+        <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-center">Our Suppliers</h2>
+        <p className="text-base md:text-lg text-center mb-16 mt-4">
+          We proudly source our Darag chickens from the esteemed members of the Panay Darag Chicken Breeders Association (PADABA)
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-6 lg:gap-8">
+          {suppliersData.map((supplier) => (
+            <div
+              key={supplier.id}
+              className="relative bg-gray-300 rounded-lg shadow-lg overflow-hidden h-48 sm:h-56 md:h-64 text-center transition-transform duration-500 ease-in-out transform hover:scale-105 hover:shadow-2xl"
+              style={{
+                backgroundImage: `url(${supplier.image})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
