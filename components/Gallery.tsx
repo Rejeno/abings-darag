@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 const photos = [
     '/collage/IMG_4896.jpg',
-    '/collage/image.png',
+    '/collage/food1.jpg',
     '/collage/IMG_4922.jpg',
     '/images/Image5.jpg',
     '/collage/IMG_4906.jpg',
@@ -14,7 +14,7 @@ const photos = [
     '/collage/IMG_4912.jpg',
     '/collage/IMG_4885.jpg',
     '/collage/IMG_4914.jpg',
-    '/collage/IMG_4869.jpg',
+    '/collage/food2.jpg',
     '/images/Image7.jpg',
 ];
 

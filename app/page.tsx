@@ -223,7 +223,7 @@ const HomePage: FC = () => {
               </div>
               <div>
                 <Image
-                  src="/images/darag2.jpg"
+                  src="/collage/IMG_4922.jpg"
                   alt="Abing's Darag Farm"
                   layout="responsive"
                   width={800}
@@ -324,7 +324,7 @@ const HomePage: FC = () => {
         {/* Remaining Text */}
         <div className="mt-2">
           <p className="text-base md:text-lg text-justify">
-            Moreover, the store&apos;s manager, Ma&apos;am Ladd Penaranda, played a crucial role in making the establishment a central figure in this larger effort. As a WVSU graduate and a respected entrepreneur, she has helped bring together the academic, agricultural, and business sectors to support the growth of the local economy through a focus on the Darag chicken. Her leadership has not only solidified the brand&apos;s presence but has also inspired other local businesses to follow a similar path of innovation and sustainability. Abing&apos;s Darag, despite its modest size, now stands at the forefront of this growing movement, paving the way for Iloilo City to be recognized as a culinary destination, while also fostering a deep sense of pride in local culture.
+            Moreover, Ma&apos;am Ladd Penaranda, played a crucial role in making the establishment a central figure in this larger effort. As a WVSU graduate and a respected entrepreneur, she has helped bring together the academic, agricultural, and business sectors to support the growth of the local economy through a focus on the Darag chicken. Her leadership has not only solidified the brand&apos;s presence but has also inspired other local businesses to follow a similar path of innovation and sustainability. Abing&apos;s Darag, despite its modest size, now stands at the forefront of this growing movement, paving the way for Iloilo City to be recognized as a culinary destination, while also fostering a deep sense of pride in local culture.
           </p>
         </div>
       </section>
