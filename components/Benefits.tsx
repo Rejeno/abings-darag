@@ -5,7 +5,7 @@ import Image from 'next/image';
 const Benefits = () => {
     return (
         <section id="benefits" className="bg-gray-100 p-4 md:p-8 text-black mt-2 sm:pt-24">
-            <h2 className="text-2xl md:text-3xl lg:text-5xl font-semibold mb-20 text-center">Why Darag Chicken?</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-5xl font-semibold mb-20 text-center">Why Darag Native Chicken?</h2>
 
             <div className="grid gap-6 md:gap-8 md:grid-cols-2 lg:grid-cols-3 mb-8">
                 {/* Superior Taste */}
