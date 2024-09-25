@@ -59,7 +59,7 @@ const HomePage: FC = () => {
 
       {/* What is Darag Chicken? */}
       <section id="about" className="p-4 md:p-8 text-black mt-8 md:mt-16">
-        <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-8 md:mb-12 text-center">What is Darag Chicken?</h2>
+        <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-8 md:mb-12 text-center">What is Darag Native Chicken?</h2>
 
         <div className="flex flex-col md:flex-row items-start md:space-x-8 mb-10">
           {/* Video visible only on web view */}
@@ -78,8 +78,8 @@ const HomePage: FC = () => {
 
           <div className="flex-1 text-lg ">
             <p className="md:flex-2 text-justify">
-              This chicken breed originates from Panay Island in the Western Visayas, near the world-famous beaches of Boracay.
-              It is rapidly rising in popularity for very good reason. The typical plumage for roosters, locally called Labuyo or Alimbuyog,
+              This native chicken breed originates from Panay Island in the Western Visayas, near the world-famous beaches of Boracay.
+              It is rapidly rising in popularity for a very good reason. The typical plumage for roosters, locally called Labuyo or Alimbuyog,
               is a deep red hackle and wings, plus ebony feathers and a matching black tail, though other color morphs are seen.
               Hens have sandy or yellowish-brown plumage. Cocks weigh an average of 1.3 kilogrammes while hens reach about 1.1 kilogrammes.
               Known for their economical feeding habits, Darag chickens are ready for harvest after around 10 weeks.
@@ -178,7 +178,7 @@ const HomePage: FC = () => {
             <p className="text-base md:text-lg">
 
 
-              What began as a small &quot;karinderia&quot; has grown into a leading business,
+              Abing&apos;s Darag Chicken Trading started as a small scale &quot;karinderia&quot; and has grown into a leading business,
               renowned for studying and trading the native Darag chicken. The journey started at West Visayas State University,
               where Ma&apos;am Ladd recognized the potential for a startup focused on Darag chicken, a breed unique to the Philippines.
 
@@ -257,9 +257,9 @@ const HomePage: FC = () => {
           {/* Description Text */}
           <div className="md:w-1/2 text-justify">
             <p className="text-base md:text-lg">
-              Abing&apos;s Darag might be small in size, but it carries immense significance. During the grand opening, high-ranking officials, business leaders, and faculty from West Visayas State University (WVSU) attended, not because of the store&apos;s physical scale, but because of its symbolic importance. The event marked an essential step in establishing a regional trademark for Iloilo City—a brand deeply rooted in local culture and agricultural innovation.
+              Abing&apos;s Darag Chicken Trading might be small in size, but it carries immense significance. During the grand opening, high-ranking officials, business leaders, and faculty from West Visayas State University (WVSU) attended, not because of the store&apos;s physical scale, but because of its symbolic importance. The event marked an essential step in establishing a regional trademark for Iloilo City—a brand deeply rooted in local culture and agricultural innovation.
               <br /><br />
-              Abing&apos;s Darag was the perfect choice for this effort because of its commitment to promoting the native Darag chicken, a breed that is unique to Panay Island. The store&apos;s ability to preserve tradition while promoting local sustainability made it an attractive platform for creating a distinct culinary identity for Iloilo City. By supporting local farmers and embracing eco-friendly practices, Abing&apos;s Darag not only uplifts the community but also paves the way for future innovations in sustainable food production.
+              Abing&apos;s Darag Chicken Trading was the perfect choice for this effort because of its commitment in promoting the native Darag chicken, a breed that is unique to Panay Island. The store&apos;s ability to preserve tradition while promoting local sustainability made it an attractive platform for creating a distinct culinary identity for Iloilo City. By supporting local farmers and embracing eco-friendly practices, Abing&apos;s Darag not only uplifts the community but also paves the way for future innovations in sustainable food production.
             </p>
           </div>
 
@@ -324,7 +324,7 @@ const HomePage: FC = () => {
         {/* Remaining Text */}
         <div className="mt-2">
           <p className="text-base md:text-lg text-justify">
-            Moreover, Ma&apos;am Ladd Penaranda, played a crucial role in making the establishment a central figure in this larger effort. As a WVSU graduate and a respected entrepreneur, she has helped bring together the academic, agricultural, and business sectors to support the growth of the local economy through a focus on the Darag chicken. Her leadership has not only solidified the brand&apos;s presence but has also inspired other local businesses to follow a similar path of innovation and sustainability. Abing&apos;s Darag, despite its modest size, now stands at the forefront of this growing movement, paving the way for Iloilo City to be recognized as a culinary destination, while also fostering a deep sense of pride in local culture.
+            Moreover, Ladd Penaranda, played a crucial role in making the establishment a central figure in this larger effort. As a WVSU graduate and a respected entrepreneur, she has helped bring together the academic, agricultural, and business sectors to support the growth of the local economy through a focus on the Darag chicken. Her crucial efforts has not only solidified the brand&apos;s presence but has also inspired other local businesses to follow a similar path of innovation and sustainability. Abing&apos;s Darag, despite its modest size, now stands at the forefront of this growing movement, paving the way for Iloilo City to be recognized as a culinary destination, while also fostering a deep sense of pride in local culture.
           </p>
         </div>
       </section>
